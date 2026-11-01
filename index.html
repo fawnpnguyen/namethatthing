@@ -37,35 +37,19 @@ button{font:inherit;cursor:pointer}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
 
-/* ---------- Hero ---------- */
-.hero{padding:52px 0 8px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
-.tagline-pill{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);font-weight:700;font-size:.85rem;padding:7px 14px;border-radius:999px;letter-spacing:.02em}
-.tagline-pill .dot{width:9px;height:9px;border-radius:50%;background:var(--gold)}
-.hero h1{font-size:clamp(3rem,7.5vw,5.4rem);font-weight:800;letter-spacing:-.01em;margin:18px 0 6px}
-.hero h1 .five{color:var(--accent);white-space:nowrap}
-.hero .sub{font-size:1.45rem;font-weight:700;margin:0 0 10px}
-.hero p.lede{color:var(--ink2);font-size:1.08rem;max-width:34em;margin:0 0 24px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+/* ---------- Landing top ---------- */
+[hidden]{display:none!important}
+.landing{padding:58px 0 10px;text-align:center}
+.site-name{background:none;border:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;font-size:clamp(1.3rem,3vw,1.75rem);letter-spacing:.32em;padding:8px 4px}
+.site-name:hover{color:var(--accent-ink)}
+.landing-tagline{font-family:"Atkinson Hyperlegible",system-ui,sans-serif;font-size:clamp(1.7rem,3.6vw,2.3rem);font-weight:400;margin:24px 0 0}
+.landing-tagline .five{color:var(--accent);font-weight:700;white-space:nowrap}
+.landing-lede{color:var(--ink2);font-size:1.12rem;max-width:57em;margin:22px auto 34px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px}
 .btn{border:0;border-radius:999px;padding:14px 26px;font-weight:700;font-size:1.02rem;text-decoration:none;display:inline-flex;align-items:center;gap:9px;transition:transform .15s ease}
 .btn:active{transform:scale(.97)}
 .btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(228,87,29,.35)}
 .btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
-.hero-art{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
-.hero-clue{background:var(--stage-bg);color:var(--stage-ink);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;gap:4px}
-.hc-kicker{font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--stage-dim)}
-.hc-number{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(4rem,9vw,6.5rem);line-height:1;color:#fff}
-.hc-unit{font-family:"Bricolage Grotesque";font-weight:600;font-size:1.5rem;color:var(--gold)}
-.hc-q{color:var(--stage-dim);margin-top:14px;font-size:1rem}
-.hero-caption{font-size:.85rem;color:var(--ink2);margin-top:8px;text-align:right}
-
-/* the routine strip */
-.routine{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:34px 0 6px}
-.routine-step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
-.routine-step .rn{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.6rem;line-height:1;color:var(--accent)}
-.routine-step .rt{font-weight:700;margin-top:4px}
-.routine-step .rd{font-size:.9rem;color:var(--ink2);margin-top:2px}
-.routine-note{color:var(--ink2);font-size:.95rem;margin:10px 2px 0}
 
 /* ---------- Sections ---------- */
 section{padding:44px 0}
@@ -89,9 +73,6 @@ section{padding:44px 0}
 .clue-kicker{font-size:1rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--stage-dim)}
 .big-number{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(4.2rem,14vw,10.5rem);line-height:.95;letter-spacing:-.02em;margin:10px 0 2px;word-break:break-word}
 .big-unit{font-family:"Bricolage Grotesque";font-weight:600;font-size:clamp(1.5rem,4vw,2.6rem);color:var(--gold)}
-.clue-seen{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:700px}
-.clue-seen .seen{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:6px 12px;font-size:.9rem;color:var(--stage-dim)}
-.clue-seen .seen b{color:var(--stage-ink)}
 .math-box{margin-top:16px;background:var(--stage-bg2);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:16px 18px}
 .math-box h4{margin:0 0 8px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 .math-box .math-q{font-weight:700;font-size:1.08rem;margin:0 0 10px;color:#fff}
@@ -119,18 +100,17 @@ section{padding:44px 0}
 .sources a{color:#FFD98A}
 
 /* ---------- Grade banks ---------- */
-.bank-bar{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-.bank-head{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:baseline;margin-bottom:12px}
-.bank-head h2{font-size:1.5rem}
-.bank-head p{color:var(--ink2);margin:0;font-size:.95rem;max-width:52em}
-.grade-grid{display:flex;flex-wrap:wrap;gap:8px}
-.gbtn{min-width:62px;padding:10px 8px 8px;border-radius:12px;border:2px solid var(--line);background:var(--surface2);color:var(--ink);font-weight:800;line-height:1.1;text-align:center}
-.gbtn small{display:block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-top:3px}
-.gbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.gbtn[aria-pressed="true"] small{color:var(--gold)}
-.gbtn:disabled{opacity:.45;cursor:not-allowed;background:transparent}
-.bank-meta{margin-top:12px;font-size:.92rem;color:var(--ink2)}
-.bank-meta b{color:var(--ink)}
+.grade-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:872px;margin:0 auto}
+.gbtn{flex:0 0 calc((100% - 48px)/7);min-width:0;padding:10px 8px 8px;border-radius:12px;border:2px solid var(--line);background:var(--surface2);color:var(--ink);font-weight:800;font-size:1.1rem;line-height:1.1;text-align:center}
+.gbtn small{display:block;font-size:.6rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);margin-top:3px;white-space:nowrap}
+@media (max-width:699px){
+  .gbtn{flex:0 1 auto;min-width:64px}
+  .gbtn small{white-space:normal}
+}
+.gbtn.live{background:var(--gold-bg)}
+.gbtn[aria-pressed="true"],.gbtn.featured{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gbtn[aria-pressed="true"] small,.gbtn.featured small{color:var(--gold)}
+.gbtn:disabled{opacity:.5;cursor:not-allowed;background:var(--surface)}
 /* ---------- Categories ---------- */
 .cat-shelves{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
 .cat-shelf{text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px;color:var(--ink);width:100%}
@@ -177,7 +157,6 @@ section{padding:44px 0}
 .card .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .card .first-clue{font-family:"Bricolage Grotesque";font-weight:800;font-size:2.3rem;line-height:1;color:var(--accent)}
 .card .first-unit{font-weight:700;color:var(--ink2);font-size:.95rem}
-.card .first-note{color:var(--ink2);font-size:.95rem;flex:1}
 .card .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);color:var(--ink2)}
 .tag.type{background:var(--teal-bg);color:var(--teal);border-color:transparent}
@@ -205,9 +184,6 @@ footer .copyright{display:block;text-align:center;margin-top:24px;line-height:1.
 footer .copyright p{margin:0}
 
 @media (max-width:860px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-art{order:-1}
-  .routine{grid-template-columns:1fr;gap:6px}
   .steps,.two-col,.reveal-grid{grid-template-columns:1fr}
   .stage-body{min-height:320px;padding:24px 16px 4px}
   .filter-row .flabel{min-width:0;width:100%}
@@ -220,57 +196,23 @@ footer .copyright p{margin:0}
 </head>
 <body>
 
-<header class="hero">
+<header class="landing">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <span class="tagline-pill"><span class="dot"></span> NAME THAT THING</span>
-        <h1>Can you name it<br>in <span class="five">5?</span></h1>
-        <p class="sub">Five numbers. One mystery. Nothing else on the screen.</p>
-        <p class="lede">A warm-up routine for the start of class. Numbers are tossed out one at a time — bare, with no explanation — and each one narrows the field. Students guess the place or the event the numbers describe. The reveal at the end carries everything: the answer, the story, every number decoded, and the math the mystery was hiding.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#play">▶ Play entry #1</a>
-          <button class="btn btn-ghost" id="heroRandomBtn" type="button" style="background:var(--ink);color:var(--bg)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg> Surprise me — random entry</button>
-          <a class="btn btn-ghost" href="#library">Browse the library</a>
-        </div>
-      </div>
-      <div>
-        <div class="hero-art hero-clue" aria-label="A sample first clue: 2 hours 40 minutes — nothing else on screen">
-          <div class="hc-kicker">Clue 1 of 5</div>
-          <div class="hc-number">2 hours</div>
-          <div class="hc-unit">40 minutes</div>
-          <div class="hc-q">Something took this long. What? Why?<br>One number in — that's all you get.</div>
-        </div>
-        <p class="hero-caption">Every mystery starts like this: one number, no name, no hints.</p>
-      </div>
+    <button class="site-name" id="homeBtn" type="button" aria-label="Name That Thing — back to the home page">NAME THAT THING</button>
+    <h1 class="landing-tagline">Can you name it in <span class="five">5?</span></h1>
+    <p class="landing-lede">Numbers are tossed out one at a time — and each one narrows the field. Students guess the place or the event the numbers describe. The reveal at the end includes the full story.</p>
+    <div class="grade-grid" id="gradeGrid" role="group" aria-label="Grade selector"></div>
+    <div class="hero-cta" id="homeActions" hidden>
+      <a class="btn btn-primary" href="#play">▶ Play entry #1</a>
+      <button class="btn btn-ghost" id="heroRandomBtn" type="button" style="background:var(--ink);color:var(--bg)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg> Surprise me — random entry</button>
+      <a class="btn btn-ghost" href="#library">Browse the library</a>
     </div>
-
-    <div class="routine" aria-label="How a round runs">
-      <div class="routine-step"><div class="rn">1</div><div class="rt">One bare number</div><div class="rd">A giant number and its unit. Less is more — that's the whole clue.</div></div>
-      <div class="routine-step"><div class="rn">2</div><div class="rt">Talk, guess, revise</div><div class="rd">What kind of thing has a number like that? Each clue tests the guesses before it.</div></div>
-      <div class="routine-step"><div class="rn">3</div><div class="rt">Reveal, then do the math</div><div class="rd">The answer, the story, every number decoded — and real math work the numbers inspire.</div></div>
-    </div>
-    <p class="routine-note">Zero prep: pull up an entry, go full-screen, and click through — five minutes, tops.</p>
   </div>
 </header>
 
 <main>
-<!-- ============ GRADE BANKS ============ -->
-<section style="padding:28px 0 6px" aria-label="Grade banks">
-  <div class="wrap">
-    <div class="bank-bar">
-      <div class="bank-head">
-        <h2>Pick your grade bank</h2>
-        <p>Three separate banks — no repeats across grades. Each bank is built to hold <b>60 entries: 10 in each of the six categories</b> below. More grades are on the way.</p>
-      </div>
-      <div class="grade-grid" id="gradeGrid" role="group" aria-label="Grade selector"></div>
-      <p class="bank-meta" id="bankMeta"></p>
-    </div>
-  </div>
-</section>
-
 <!-- ============ PLAYER ============ -->
-<section id="play" style="padding-top:26px">
+<section id="play" style="padding-top:26px" hidden>
   <div class="wrap">
     <div class="sec-head">
       <h2>Now playing</h2>
@@ -298,7 +240,6 @@ footer .copyright p{margin:0}
           <div class="clue-kicker" id="clueKicker">Clue 1 of 5</div>
           <div class="big-number" id="bigNumber">2 hours 40 minutes</div>
           <div class="big-unit" id="bigUnit"></div>
-          <div class="clue-seen" id="clueSeen"></div>
         </div>
 
         <div class="reveal-wrap" id="revealWrap">
@@ -336,7 +277,7 @@ footer .copyright p{margin:0}
 </section>
 
 <!-- ============ LIBRARY ============ -->
-<section id="library">
+<section id="library" hidden>
   <div class="wrap">
     <div class="sec-head">
       <h2>The library</h2>
@@ -609,7 +550,7 @@ var GRADES = ["K",1,2,3,4,5,6,7,8,9,10,11,12];
 var ACTIVE_GRADES = [6,7,8];
 
 /* ---------- State ---------- */
-var state = { entry: 0, stage: 0, grade: 6 };
+var state = { entry: 0, stage: 0, grade: 6, home: true };
 var filters = { type:"All", theme:"All", lens:"All", q:"", category:"All" };
 
 function $(id){ return document.getElementById(id); }
@@ -647,13 +588,6 @@ function renderPlayer(){
     bn.textContent = c.n;
     bn.style.fontSize = c.n.length > 7 ? "clamp(2.6rem,8.5vw,6.2rem)" : "";
     $("bigUnit").textContent = c.u || "";
-    var seen = $("clueSeen"); seen.innerHTML = "";
-    for (var j=0;j<state.stage;j++){
-      var s = document.createElement("span"); s.className = "seen";
-      s.innerHTML = "Clue " + (j+1) + ": <b></b>";
-      s.querySelector("b").textContent = e.clues[j].n + (e.clues[j].u ? " " + e.clues[j].u : "");
-      seen.appendChild(s);
-    }
     $("nextBtn").textContent = state.stage === 4 ? "Reveal the answer →" : "Next clue →";
   } else {
     $("chipStage").textContent = "The reveal";
@@ -756,15 +690,22 @@ function renderGradeSelector(){
     b.type = "button"; b.className = "gbtn";
     if (!isActiveGrade){ b.disabled = true; b.innerHTML = (g==="K"?"K":g) + "<small>Coming soon</small>"; b.setAttribute("aria-label","Grade "+g+", coming soon"); }
     else {
-      b.setAttribute("aria-pressed", state.grade === g ? "true" : "false");
+      b.classList.add("live");
+      b.setAttribute("aria-pressed", (!state.home && state.grade === g) ? "true" : "false");
+      if (state.home && g === 6) b.classList.add("featured");
       var n = ENTRIES.filter(function(e){ return e.grade===g; }).length;
       b.innerHTML = (g==="K"?"K":g) + "<small>" + n + " live</small>";
-      b.addEventListener("click", function(){ setGrade(g); });
+      b.addEventListener("click", function(){ chooseGrade(g); });
     }
     grid.appendChild(b);
   });
-  var totalInBank = ENTRIES.filter(function(e){ return e.grade===state.grade; }).length;
-  $("bankMeta").innerHTML = "You are in the <b>Grade " + state.grade + " bank</b> — <b>" + totalInBank + " of 60</b> slots filled so far. Switching banks never repeats an entry: each mystery lives in one grade only.";
+}
+function chooseGrade(g){
+  state.home = false;
+  $("homeActions").hidden = false;
+  $("play").hidden = false;
+  $("library").hidden = false;
+  setGrade(g);
 }
 function setGrade(g){
   state.grade = g; filters.category = "All";
@@ -829,7 +770,6 @@ function renderLibrary(){
     card.innerHTML =
       '<span class="card-top"><span><span class="first-clue"></span><br><span class="first-unit"></span></span>' +
       '<span class="diff" title="Difficulty">Converges ' + stars + '</span></span>' +
-      '<span class="first-note">Clue 1 is a bare number — no hints under it. The answer stays hidden until the reveal.</span>' +
       '<span class="tags"><span class="tag cat-tag"></span><span class="tag grade-t"></span><span class="tag type"></span><span class="tag theme-t"></span></span>' +
       '<span class="play-line">Play this mystery →</span>';
     card.querySelector(".first-clue").textContent = e.clues[0].n;
@@ -894,7 +834,18 @@ if (_pickBtn) _pickBtn.addEventListener("click", function(){
 });
 var _heroRandomBtn = $("heroRandomBtn");
 if (_heroRandomBtn) _heroRandomBtn.addEventListener("click", pickRandomEntry);
-document.querySelector(".hero-cta .btn-primary").addEventListener("click", function(){ loadEntry(0, true); });
+$("homeBtn").addEventListener("click", function(){
+  state.home = true;
+  $("homeActions").hidden = true;
+  $("play").hidden = true;
+  $("library").hidden = true;
+  renderGradeSelector();
+  window.scrollTo({top:0, behavior:"smooth"});
+});
+document.querySelector(".hero-cta .btn-primary").addEventListener("click", function(){
+  var firstInGrade = ENTRIES.findIndex(function(e){ return e.grade===state.grade; });
+  loadEntry(firstInGrade === -1 ? 0 : firstInGrade, true);
+});
 document.addEventListener("keydown", function(ev){
   var tag = (ev.target && ev.target.tagName) || "";
   if (tag === "INPUT" || tag === "TEXTAREA") return;
