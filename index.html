@@ -100,12 +100,12 @@ section{padding:44px 0}
 .sources a{color:#FFD98A}
 
 /* ---------- Grade banks ---------- */
-.grade-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:872px;margin:0 auto}
-.gbtn{flex:0 0 calc((100% - 48px)/7);min-width:0;padding:10px 8px 8px;border-radius:12px;border:2px solid var(--line);background:var(--surface2);color:var(--ink);font-weight:800;font-size:1.1rem;line-height:1.1;text-align:center}
-.gbtn small{display:block;font-size:.6rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);margin-top:3px;white-space:nowrap}
+.grade-grid{display:flex;flex-wrap:nowrap;gap:6px;justify-content:center;max-width:1080px;margin:30px auto 0}
+.gbtn{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px 2px 6px;border-radius:10px;border:2px solid var(--line);background:var(--surface2);color:var(--ink);font-weight:800;font-size:1rem;line-height:1.1;text-align:center}
+.gbtn small{display:block;font-size:.55rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);margin-top:2px;white-space:nowrap}
 @media (max-width:699px){
-  .gbtn{flex:0 1 auto;min-width:64px}
-  .gbtn small{white-space:normal}
+  .grade-grid{flex-wrap:wrap}
+  .gbtn{flex:0 1 auto;min-width:52px}
 }
 .gbtn.live{background:var(--gold-bg)}
 .gbtn[aria-pressed="true"],.gbtn.featured{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -170,21 +170,13 @@ section{padding:44px 0}
 .step .num{font-family:"Bricolage Grotesque";font-weight:800;font-size:2.4rem;color:var(--accent);line-height:1}
 .step h3{font-size:1.2rem;margin:8px 0 6px;font-weight:700}
 .step p{color:var(--ink2);margin:0;font-size:.98rem}
-.rules{background:var(--surface2);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-top:16px}
-.rules h3{margin-bottom:10px;font-size:1.15rem}
-.rules ul{margin:0;padding-left:22px}
-.rules li{margin-bottom:6px}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.info-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-.info-card h3{font-size:1.2rem;margin-bottom:8px}
-.info-card p{color:var(--ink2);margin:0 0 10px}
 footer{border-top:1px solid var(--line);padding:30px 0 46px;color:var(--ink2);font-size:.92rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
 footer .copyright{display:block;text-align:center;margin-top:24px;line-height:1.6}
 footer .copyright p{margin:0}
 
 @media (max-width:860px){
-  .steps,.two-col,.reveal-grid{grid-template-columns:1fr}
+  .steps,.reveal-grid{grid-template-columns:1fr}
   .stage-body{min-height:320px;padding:24px 16px 4px}
   .filter-row .flabel{min-width:0;width:100%}
 }
@@ -200,7 +192,6 @@ footer .copyright p{margin:0}
   <div class="wrap">
     <button class="site-name" id="homeBtn" type="button" aria-label="Name That Thing — back to the home page">NAME THAT THING</button>
     <h1 class="landing-tagline">Can you name it in <span class="five">5?</span></h1>
-    <p class="landing-lede">Numbers are tossed out one at a time — and each one narrows the field. Students guess the place or the event the numbers describe. The reveal at the end includes the full story.</p>
     <div class="grade-grid" id="gradeGrid" role="group" aria-label="Grade selector"></div>
     <div class="hero-cta" id="homeActions" hidden>
       <a class="btn btn-primary" href="#play">▶ Play entry #1</a>
@@ -320,29 +311,11 @@ footer .copyright p{margin:0}
   <div class="wrap">
     <div class="sec-head"><h2>How a round runs</h2></div>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>One number at a time</h3><p>The teacher advances one clue per screen: a giant number and its unit — nothing else. No sentence underneath doing the thinking for anyone. Less is more is the anthem of each clue.</p></div>
-      <div class="step"><div class="num">2</div><h3>Guess, then revise</h3><p>After each clue, the class talks: what kind of thing has a number like that? Magnitude, units, scale. Every new number confirms some guesses and kills others — that revision is the reasoning.</p></div>
-      <div class="step"><div class="num">3</div><h3>The reveal does the teaching</h3><p>The final stage has everything: the answer, a photo, the story the numbers were telling, each number decoded, and one or two “do the math” tasks the mystery itself inspires — with worked answers.</p></div>
+      <div class="step"><div class="num">1</div><h3>One number at a time</h3><p>The teacher advances one clue per screen: a giant number and its unit — nothing else.</p></div>
+      <div class="step"><div class="num">2</div><h3>Guess, then revise</h3><p>After each clue, the class talks: what kind of thing has a number like that? Magnitude, units, scale.</p></div>
+      <div class="step"><div class="num">3</div><h3>The reveal</h3><p>The final stage has the full story and one or two “do the math” questions.</p></div>
     </div>
-    <div class="rules">
-      <h3>Running it as a warm-up</h3>
-      <ul>
-        <li><b>Five clues, then the reveal.</b> Clues run from least telling to most — early numbers fit hundreds of things; late numbers fit almost nothing else.</li>
-        <li><b>Slow is the point.</b> Let a clue sit. The thinking happens in the pause between numbers, not in the clicking.</li>
-        <li><b>Lean by design.</b> This is a warm-up routine — the payoff is the talk, and the math waiting at the reveal.</li>
-        <li><b>End with the math.</b> Every reveal closes with authentic math built from the entry's own numbers: a percent, a rate, a conversion, a scale factor.</li>
-      </ul>
-    </div>
-    <div class="two-col" style="margin-top:16px">
-      <div class="info-card">
-        <h3>For middle school and up</h3>
-        <p>The numbers here are honest — shipwrecks, eruptions, death tolls and all — because the band can handle them, and the inference can be genuinely hard, not just cute. Clue screens hide the giveaway words on purpose: “74% · 20%” lands very differently before anyone says which group is which.</p>
-      </div>
-      <div class="info-card">
-        <h3>Zero prep, for real</h3>
-        <p>Pull up an entry, tap full screen, and click through. The reveal is built in as the final stage, every number is decoded there, and every figure carries its source so a student who asks “says who?” gets a real answer.</p>
-      </div>
-    </div>
+
   </div>
 </section>
 </main>
@@ -688,7 +661,7 @@ function renderGradeSelector(){
     var isActiveGrade = ACTIVE_GRADES.indexOf(g) !== -1;
     var b = document.createElement("button");
     b.type = "button"; b.className = "gbtn";
-    if (!isActiveGrade){ b.disabled = true; b.innerHTML = (g==="K"?"K":g) + "<small>Coming soon</small>"; b.setAttribute("aria-label","Grade "+g+", coming soon"); }
+    if (!isActiveGrade){ b.disabled = true; b.innerHTML = (g==="K"?"K":g); b.setAttribute("aria-label","Grade "+g+", coming soon"); }
     else {
       b.classList.add("live");
       b.setAttribute("aria-pressed", (!state.home && state.grade === g) ? "true" : "false");
