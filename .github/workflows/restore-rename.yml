@@ -1,0 +1,25 @@
+name: Restore and rename
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore original file as index.html
+        run: |
+          git config user.name "fawnpnguyen"
+          git config user.email "fawnpnguyen@users.noreply.github.com"
+          git rm -f index.html || true
+          git checkout 2485265 -- name-that-thing.html
+          ls -l name-that-thing.html
+          git mv -f name-that-thing.html index.html
+          ls -l index.html
+          git add index.html
+          git status
+          git commit -m "Restore original site as index.html" || echo "nothing to commit"
+          git push
