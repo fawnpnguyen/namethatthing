@@ -323,21 +323,9 @@ footer .copyright p{margin:0}
       <button class="lib-back-btn" id="libraryBackBtn" type="button" aria-label="Back to the mystery player">← Back to the mystery</button>
     </div>
     <div class="sec-head">
-      <h2>The library</h2>
+      <h2 id="libraryHeading">The library, Grade 6</h2>
     </div>
 
-    <div class="lib-toolbar">
-      <p><strong style="color:var(--ink)">Don't want to choose?</strong> Two ways to let the class decide: surprise everyone, or call on a student to pick a category.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <button class="btn-random" id="randomBtn" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg> Surprise me — random entry</button>
-        <button class="btn-pick" id="pickCatBtn" type="button" aria-expanded="false" aria-controls="pickPanel">✋ Pick a category</button>
-      </div>
-    </div>
-    <div class="pick-panel" id="pickPanel">
-      <h3>“Pick a category!”</h3>
-      <p>Call on a student, let them call it out, then tap their category. You'll get a random entry from that shelf in the current grade bank, straight into the player at Clue 1.</p>
-      <div class="pick-grid" id="pickGrid"></div>
-    </div>
     <div class="filters">
       <div class="filter-row" role="group" aria-label="Type filter">
         <span class="flabel">Kind</span>
@@ -898,6 +886,7 @@ function pickFromCategory(cat){
   loadEntry(pick);
 }
 function renderLibrary(){
+  var heading = $("libraryHeading"); if (heading) heading.textContent = "The library, Grade " + state.grade;
   var grid = $("libGrid"); grid.innerHTML = "";
   var shown = ENTRIES.filter(matches);
   if (!shown.length){
@@ -909,16 +898,13 @@ function renderLibrary(){
     var idx = ENTRIES.indexOf(e);
     var card = document.createElement("button");
     card.type = "button"; card.className = "card";
-    var stars = "●".repeat(e.diff) + "○".repeat(3 - e.diff);
     card.innerHTML =
-      '<span class="card-top"><span><span class="first-clue"></span><br><span class="first-unit"></span></span>' +
-      '<span class="diff" title="Difficulty">Converges ' + stars + '</span></span>' +
-      '<span class="tags"><span class="tag cat-tag"></span><span class="tag grade-t"></span><span class="tag type"></span><span class="tag theme-t"></span></span>' +
+      '<span class="card-top"><span><span class="first-clue"></span><br><span class="first-unit"></span></span></span>' +
+      '<span class="tags"><span class="tag cat-tag"></span><span class="tag type"></span><span class="tag theme-t"></span></span>' +
       '<span class="play-line">Play this mystery →</span>';
     card.querySelector(".first-clue").textContent = e.clues[0].n;
     card.querySelector(".first-unit").textContent = e.clues[0].u;
     var catTag = card.querySelector(".cat-tag"); catTag.textContent = e.category; catTag.style.background = CAT_COLORS[e.category] || "var(--ink)";
-    card.querySelector(".grade-t").textContent = "Grade " + e.grade;
     card.querySelector(".tag.type").textContent = e.type;
     card.querySelector(".theme-t").textContent = e.theme + " · " + e.lens.join(" · ");
     card.setAttribute("aria-label", "Play mystery number " + (idx+1) + ", a " + e.type.toLowerCase() + " in " + e.theme);
@@ -976,7 +962,7 @@ document.querySelectorAll("[data-ftype]").forEach(function(b){
   b.addEventListener("click", function(){ filters.type = b.dataset.ftype; refreshFilterButtons(); renderLibrary(); });
 });
 $("searchInput").addEventListener("input", function(){ filters.q = this.value; renderLibrary(); });
-$("randomBtn").addEventListener("click", pickRandomEntry);
+var _randomBtn = $("randomBtn"); if (_randomBtn) _randomBtn.addEventListener("click", pickRandomEntry);
 var _pickBtn = $("pickCatBtn");
 if (_pickBtn) _pickBtn.addEventListener("click", function(){
   var panel = $("pickPanel"); var open = panel.classList.toggle("show");
