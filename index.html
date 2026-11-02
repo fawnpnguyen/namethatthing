@@ -15,6 +15,7 @@
   --ink:#3E2A20; --ink2:#76594A; --line:#E9D5C6;
   --accent:#B87333; --accent-deep:#A05F27; --accent-ink:#8F551C; --teal:#A05F27; --teal-bg:#F3DFC9;
   --gold:#E3A857; --gold-bg:#F6E3CE; --stage-bg:#F5DEC9; --stage-bg2:#FCEDDC; --stage-line:#D9B995;
+  --cat-geo:#2E6B2E; --cat-ent:#A62653; --cat-hist:#8A5A12; --cat-arts:#74406B; --cat-sci:#1F6E6B; --cat-sports:#B5502A;
   --stage-ink:#3E2A20; --stage-dim:#76594A;
   --fs-tagline:clamp(1.28rem,2.6vw,1.6rem); --fs-display:clamp(1.18rem,2.4vw,1.48rem); --fs-head:1.25rem; --fs-body:1.125rem; --fs-label:.82rem;
   --radius:18px; --shadow:0 10px 30px rgba(62,42,32,.12);
@@ -41,10 +42,9 @@ button{font:inherit;cursor:pointer}
 .btn:active{transform:scale(.97)}
 .btn-primary{background:var(--accent-deep);color:#fff;box-shadow:0 6px 18px rgba(160,95,39,.35)}
 .btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
-.hero-cta .btn{flex:1 1 0;min-width:0;min-height:54px;justify-content:center;text-align:center;white-space:nowrap;box-shadow:none}
-.hero-cta .btn-primary{background:#B98D68;color:#FFFBF5;border:2px solid #B98D68;box-shadow:none}
-.hero-cta #heroRandomBtn{background:#7A6658;color:#FBF2E9;border:2px solid #7A6658;box-shadow:none}
-.hero-cta #browseLibraryBtn{background:rgba(255,253,251,.65);color:#7A6658;border:2px solid #C7AA97;box-shadow:none}
+.hero-cta .btn{flex:1 1 0;min-width:0;min-height:54px;justify-content:center;text-align:center;white-space:nowrap;box-shadow:none;background:var(--bg);color:var(--ink);border:2px solid #C7AA97}
+.hero-cta .btn:hover{background:var(--surface);border-color:var(--ink2)}
+.hero-cta .btn svg{flex-shrink:0}
 @media (max-width:760px){.hero-cta{flex-wrap:wrap}.hero-cta .btn{flex:1 1 100%;white-space:normal}}
 
 /* ---------- Sections ---------- */
@@ -104,20 +104,21 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 .player-shell:fullscreen .entry-start.show{flex:1}
 .entry-start{display:none;width:100%}
 .entry-start.show{display:flex;flex-direction:column;align-items:center;min-height:400px;width:100%}
-.shelves-line{margin:28px auto 0;text-align:center;color:var(--ink);font-size:var(--fs-label);font-weight:600;letter-spacing:.01em;line-height:1.7}
+.shelves-line{margin:28px auto 0;text-align:center;color:var(--ink);font-size:1.05rem;font-weight:600;letter-spacing:.01em;line-height:1.6;max-width:1080px}
 .shelves-line .shelf-name{font-weight:800;white-space:nowrap}
-.shelves-line .shelf-geo{color:#2E6B2E}
-.shelves-line .shelf-ent{color:#A62653}
-.shelves-line .shelf-hist{color:#8A5A12}
-.shelves-line .shelf-arts{color:#74406B}
-.shelves-line .shelf-sci{color:#1F6E6B}
-.shelves-line .shelf-sports{color:#B5502A}
+.shelves-line .shelf-geo{color:var(--cat-geo)}
+.shelves-line .shelf-ent{color:var(--cat-ent)}
+.shelves-line .shelf-hist{color:var(--cat-hist)}
+.shelves-line .shelf-arts{color:var(--cat-arts)}
+.shelves-line .shelf-sci{color:var(--cat-sci)}
+.shelves-line .shelf-sports{color:var(--cat-sports)}
 .entry-center{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 0 26px}
 .entry-chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
 .entry-question{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1.02;margin:26px 0 0;text-align:center}
 .entry-question .five{color:var(--accent);white-space:nowrap}
 .entry-sub{color:var(--stage-dim);font-size:var(--fs-body);margin:16px 0 0;text-align:center}
-.begin-btn{margin-top:34px;background:var(--accent-deep);color:#fff;border:0;border-radius:999px;padding:16px 46px;font-weight:800;font-size:var(--fs-body);box-shadow:0 6px 18px rgba(160,95,39,.35)}
+.begin-btn{margin-top:34px;background:var(--gold);color:var(--ink);border:2px solid var(--gold);border-radius:999px;padding:16px 46px;font-weight:800;font-size:var(--fs-body);box-shadow:none}
+.begin-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 .begin-btn:active{transform:scale(.97)}
 /* reveal inside player */
 .reveal-wrap{display:none;width:100%;text-align:left}
@@ -238,7 +239,7 @@ footer .copyright p{margin:0}
       <div class="hero-cta">
         <a class="btn btn-primary" href="#play">▶ Play entry #1</a>
         <button class="btn btn-ghost" id="heroRandomBtn" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg> Surprise me</button>
-        <button class="btn btn-ghost" id="browseLibraryBtn" type="button">Browse the library</button>
+        <button class="btn btn-ghost" id="browseLibraryBtn" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg> Browse the library</button>
       </div>
       <p class="shelves-line">Six shelves: <span class="shelf-name shelf-geo">Geography</span> · <span class="shelf-name shelf-ent">Entertainment</span> · <span class="shelf-name shelf-hist">History</span> · <span class="shelf-name shelf-arts">Arts &amp; Literature</span> · <span class="shelf-name shelf-sci">Science &amp; Nature</span> · <span class="shelf-name shelf-sports">Sports &amp; Leisure</span></p>
     </div>
@@ -560,13 +561,19 @@ var ASSIGN = {
 ENTRIES.forEach(function(e){ var a = ASSIGN[e.id] || {grade:6, category:"Geography"}; e.grade = a.grade; e.category = a.category; });
 var CATEGORIES = ["Geography","Entertainment","History","Arts & Literature","Science & Nature","Sports & Leisure"];
 /* Site's own palette for categories — warm editorial tones, no borrowed branding, shapes, or pie/wedge motif */
+/* Single source of truth: the --cat-* custom properties in :root.
+   The shelves line uses those same variables in CSS, and the category
+   chips (painted from CAT_COLORS below) read them here — so a shelf
+   name's text color is by construction the chip's background color.
+   e.g. History: --cat-hist #8A5A12 in both places. */
+function catVar(name, fallback){ var v = ""; try { v = getComputedStyle(document.documentElement).getPropertyValue(name).trim(); } catch(e){} return v || fallback; }
 var CAT_COLORS = {
-  "Geography":"#2E6B2E",
-  "Entertainment":"#A62653",
-  "History":"#8A5A12",
-  "Arts & Literature":"#74406B",
-  "Science & Nature":"#1F6E6B",
-  "Sports & Leisure":"#B5502A"
+  "Geography": catVar("--cat-geo", "#2E6B2E"),
+  "Entertainment": catVar("--cat-ent", "#A62653"),
+  "History": catVar("--cat-hist", "#8A5A12"),
+  "Arts & Literature": catVar("--cat-arts", "#74406B"),
+  "Science & Nature": catVar("--cat-sci", "#1F6E6B"),
+  "Sports & Leisure": catVar("--cat-sports", "#B5502A")
 };
 /* Soft wash of each category color over the blush stage — a clearly tinted light card,
    never the full-strength hue, so espresso text stays at full readability on every category.
