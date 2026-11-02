@@ -1395,10 +1395,6 @@ $("homeBtn").addEventListener("click", function(){
   renderGradeSelector();
   window.scrollTo({top:0, behavior:"smooth"});
 });
-document.querySelector(".hero-cta .btn-primary").addEventListener("click", function(){
-  var firstInGrade = ENTRIES.findIndex(function(e){ return e.grade===state.grade; });
-  loadEntry(firstInGrade === -1 ? 0 : firstInGrade, true);
-});
 document.addEventListener("keydown", function(ev){
   var tag = (ev.target && ev.target.tagName) || "";
   if (tag === "INPUT" || tag === "TEXTAREA") return;
