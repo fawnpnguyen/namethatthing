@@ -281,6 +281,7 @@ footer .copyright p{margin:0}
           <span class="chip gold" id="chipStage">Clue 1 of 5</span>
           <button type="button" class="chip chip--link" id="chipGrade" title="Open the Grade 6 library">Grade 6</button>
           <button type="button" class="chip chip--link" id="chipCategory" title="Open this category in the library">History</button>
+          <button type="button" class="chip chip--link" id="chipKind" title="Open this kind in the library">Event</button>
         </div>
         <div style="display:flex;gap:10px;align-items:center">
           <div class="stage-dots" id="stageDots" aria-label="Stage progress"></div>
@@ -294,6 +295,7 @@ footer .copyright p{margin:0}
             <div class="entry-chips">
               <button type="button" class="chip chip--link" id="startChipCategory" title="Open this category in the library">History</button>
               <button type="button" class="chip chip--link" id="startChipGrade" title="Open the Grade 6 library">Grade 6</button>
+              <button type="button" class="chip chip--link" id="startChipKind" title="Open this kind in the library">Event</button>
             </div>
             <h3 class="entry-question">Can you name it in <span class="five">5?</span></h3>
             <p class="entry-sub">5 clues · then the reveal</p>
@@ -358,6 +360,7 @@ footer .copyright p{margin:0}
         <button class="fbtn" data-ftype="All" aria-pressed="true" type="button">All</button>
         <button class="fbtn" data-ftype="Place" aria-pressed="false" type="button">Places</button>
         <button class="fbtn" data-ftype="Event" aria-pressed="false" type="button">Events</button>
+        <button class="fbtn" data-ftype="Person" aria-pressed="false" type="button">People</button>
       </div>
       <div class="filter-row" id="themeRow" role="group" aria-label="Theme filter"><span class="flabel">Theme</span></div>
       <div class="filter-row" id="lensRow" role="group" aria-label="Math lens filter"><span class="flabel">Math lens</span></div>
@@ -681,6 +684,15 @@ function goLibraryForCategory(cat){
   filters.category = cat || e.category;
   openLibraryFiltered();
 }
+/* Kinds are read straight from each entry's type field (Place / Event / Person);
+   only the filter-row labels and chip aria-labels need the plural form. */
+var KIND_PLURAL = { Place:"Places", Event:"Events", Person:"People" };
+function goLibraryForKind(kind){
+  var e = currentEntry(); state.grade = e.grade;
+  clearLibraryFilters();
+  filters.type = kind || e.type;
+  openLibraryFiltered();
+}
 function syncChipLabels(){
   var e = currentEntry();
   var gradeLabel = "See all Grade " + e.grade + " entries in the library";
@@ -690,6 +702,10 @@ function syncChipLabels(){
   });
   [["chipCategory"],["startChipCategory"]].forEach(function(pair){
     var el = $(pair[0]); if (el){ el.setAttribute("aria-label", catLabel); el.title = catLabel; }
+  });
+  var kindLabel = "See Grade " + e.grade + " " + (KIND_PLURAL[e.type] || e.type) + " in the library";
+  [["chipKind"],["startChipKind"]].forEach(function(pair){
+    var el = $(pair[0]); if (el){ el.setAttribute("aria-label", kindLabel); el.title = kindLabel; }
   });
 }
 function renderPlayer(){
@@ -706,6 +722,7 @@ function renderPlayer(){
     $("startChipCategory").textContent = e.category;
     paintCatChip($("startChipCategory"), e.category);
     $("startChipGrade").textContent = "Grade " + e.grade;
+    $("startChipKind").textContent = e.type;
     syncChipLabels();
     return;
   }
@@ -722,12 +739,14 @@ function renderPlayer(){
 
   if ($("chipGrade")) $("chipGrade").textContent = "Grade " + e.grade;
   if ($("chipCategory")){ $("chipCategory").textContent = e.category; paintCatChip($("chipCategory"), e.category); }
-  /* Clue screens: top bar carries only progress + Full screen — no stage/grade/category/lens chips.
-     Reveal: keep stage pill + grade/category nav chips; lens chip is gone everywhere in the player. */
+  if ($("chipKind")) $("chipKind").textContent = e.type;
+  /* Clue screens: top bar carries only progress + Full screen — no stage/grade/category/kind chips.
+     Reveal: keep stage pill + grade/category/kind nav chips; lens chip is gone everywhere in the player. */
   var clueMode = !rev;
   if ($("chipStage")) $("chipStage").style.display = clueMode ? "none" : "";
   if ($("chipGrade")) $("chipGrade").style.display = clueMode ? "none" : "";
   if ($("chipCategory")) $("chipCategory").style.display = clueMode ? "none" : "";
+  if ($("chipKind")) $("chipKind").style.display = clueMode ? "none" : "";
   syncChipLabels();
 
   if (!rev){
@@ -1005,6 +1024,7 @@ $("prevBtn").addEventListener("click", function(){
 $("beginBtn").addEventListener("click", beginEntry);
 ["chipGrade","startChipGrade"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForGrade(); }); });
 ["chipCategory","startChipCategory"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForCategory(currentEntry().category); }); });
+["chipKind","startChipKind"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForKind(currentEntry().type); }); });
 $("skipRevealBtn").addEventListener("click", function(){ setStage(5); });
 $("restartBtn").addEventListener("click", function(){ setStage(0); });
 $("fsBtn").addEventListener("click", function(){
