@@ -31,6 +31,7 @@ button{font:inherit;cursor:pointer}
 
 /* ---------- Landing top ---------- */
 [hidden]{display:none!important}
+body[data-view="library"] #landingTagline,body[data-view="library"] #homeActions{display:none!important}
 .landing{padding:58px 0 10px;text-align:center}
 .site-name{background:none;border:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(1.3rem,3vw,1.75rem);letter-spacing:.32em;padding:8px 4px}
 .site-name:hover{color:var(--accent-ink)}
@@ -257,7 +258,7 @@ footer .copyright p{margin:0}
 <header class="landing">
   <div class="wrap">
     <button class="site-name" id="homeBtn" type="button" aria-label="Name That Thing — back to the home page">NAME THAT THING</button>
-    <h1 class="landing-tagline">Can you name it in <span class="five">5?</span></h1>
+    <h1 class="landing-tagline" id="landingTagline">Can you name it in <span class="five">5?</span></h1>
     <div class="grade-grid" id="gradeGrid" role="group" aria-label="Grade selector"></div>
     <div id="homeActions" hidden>
       <div class="hero-cta">
@@ -619,25 +620,30 @@ function $(id){ return document.getElementById(id); }
 /* ---------- Views: home (landing) / play (player is the last thing) / library (its own view) ---------- */
 function applyView(){
   var howEl = $("how"), footEl = $("siteFooter");
+  var taglineEl = $("landingTagline");
   if (state.view === "home"){
+    if (taglineEl) taglineEl.hidden = false;
     $("homeActions").hidden = true;
     $("play").hidden = true;
     $("library").hidden = true;
     if (howEl) howEl.hidden = false;
     if (footEl) footEl.hidden = false;
   } else if (state.view === "library"){
-    $("homeActions").hidden = false;
+    if (taglineEl) taglineEl.hidden = true;
+    $("homeActions").hidden = true;
     $("play").hidden = true;
     $("library").hidden = false;
     if (howEl) howEl.hidden = true;
     if (footEl) footEl.hidden = false;
   } else {
+    if (taglineEl) taglineEl.hidden = false;
     $("homeActions").hidden = false;
     $("play").hidden = false;
     $("library").hidden = true;
     if (howEl) howEl.hidden = true;
     if (footEl) footEl.hidden = true;
   }
+  document.body.setAttribute("data-view", state.view);
 }
 function showPlayView(){ state.view = "play"; state.home = false; applyView(); }
 function showLibraryView(){ state.view = "library"; state.home = false; applyView(); }
