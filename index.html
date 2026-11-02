@@ -183,11 +183,13 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 .btn-random:active{transform:scale(.97)}
 .btn-random svg{flex-shrink:0}
 .btn-random-top{background:var(--ink);color:var(--bg);border:2px solid var(--ink)}
-.filters{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
-.filter-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filters{display:flex;flex-direction:column;gap:14px;margin-bottom:22px}
+.filter-row{display:flex;column-gap:24px;row-gap:8px;flex-wrap:wrap;align-items:center}
 .filter-row .flabel{font-weight:800;font-size:var(--fs-label);color:var(--ink2);min-width:74px}
-.fbtn{border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 15px;font-weight:800;font-size:var(--fs-label)}
-.fbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.fbtn{border:0;border-bottom:3px solid transparent;background:transparent;color:#7A6658;border-radius:0;padding:6px 1px 4px;font-weight:400;font-size:1rem;line-height:1.25;letter-spacing:.01em}
+.fbtn:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1.5px}
+.fbtn[aria-pressed="true"]{background:transparent;color:var(--ink);border-bottom-color:#B87333;font-weight:800}
+.fbtn[aria-pressed="true"]:hover{text-decoration:none}
 .search-box{flex:1;min-width:200px}
 .search-box input{width:100%;padding:11px 16px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
 .lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
@@ -199,6 +201,7 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 .card .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:var(--fs-label);font-weight:800;padding:3px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);color:var(--ink2)}
 .tag.type{background:var(--teal-bg);color:var(--teal);border-color:transparent}
+.card .tags .tag.theme-t{background:transparent;border-color:transparent;border-radius:0;color:#7A6658;padding:2px 0 0;flex:1 1 100%;font-weight:600;text-align:left}
 .card .play-line{font-weight:800;color:var(--accent-ink);font-size:var(--fs-body)}
 .diff{font-size:var(--fs-label);color:var(--ink2)}
 .no-results{grid-column:1/-1;text-align:center;color:var(--ink2);padding:34px;border:1.5px dashed var(--line);border-radius:var(--radius)}
