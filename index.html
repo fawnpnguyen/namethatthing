@@ -33,7 +33,7 @@ button{font:inherit;cursor:pointer}
 [hidden]{display:none!important}
 body[data-view="library"] #landingTagline,body[data-view="library"] #homeActions{display:none!important}
 .landing{padding:58px 0 10px;text-align:center}
-.site-name{background:none;border:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(1.3rem,3vw,1.75rem);letter-spacing:.32em;padding:8px 4px}
+.site-name{background:none;border:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(1.3rem,3vw,1.75rem);letter-spacing:.32em;padding:8px 4px 8px calc(4px + .32em)}/* padding-left adds back the trailing letter-spacing after the final G, so the glyphs — not the text block — sit on the page center */
 .site-name:hover{color:var(--accent-ink)}
 .landing-tagline{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:var(--fs-tagline);font-weight:800;line-height:1.02;margin:24px 0 0}
 .landing-tagline .five{color:var(--accent);font-weight:800;white-space:nowrap}
