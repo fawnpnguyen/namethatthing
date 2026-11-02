@@ -324,12 +324,7 @@ footer .copyright p{margin:0}
     </div>
     <div class="sec-head">
       <h2>The library</h2>
-      <p><span id="libCount"></span> Browse by category shelf, by place or event, by theme, or by the math lens you're teaching this week. Tap any card to play it.</p>
     </div>
-
-    <h3 style="font-size:var(--fs-head);margin:0 0 10px">The six category shelves — <span style="color:var(--ink2);font-weight:400">10 slots each in the finished bank</span></h3>
-    <div class="cat-shelves" id="catShelves" role="group" aria-label="Category shelves"></div>
-    <p style="color:var(--ink2);font-size:var(--fs-body);margin:-6px 0 18px">Tap a shelf to filter to that category. Tap it again to show the whole bank. Empty shelves are honest slots — entries for them are in the pipeline, awaiting approval.</p>
 
     <div class="lib-toolbar">
       <p><strong style="color:var(--ink)">Don't want to choose?</strong> Two ways to let the class decide: surprise everyone, or call on a student to pick a category.</p>
@@ -905,8 +900,6 @@ function pickFromCategory(cat){
 function renderLibrary(){
   var grid = $("libGrid"); grid.innerHTML = "";
   var shown = ENTRIES.filter(matches);
-  var bankTotal = ENTRIES.filter(function(e){ return e.grade===state.grade; }).length;
-  $("libCount").textContent = "Grade " + state.grade + " bank: showing " + shown.length + " of " + bankTotal + " live mysteries in this bank (" + ENTRIES.length + " live across grades 6–8; 60 planned per bank).";
   if (!shown.length){
     var nr = document.createElement("div"); nr.className = "no-results";
     nr.textContent = "No mystery matches that combination — try clearing a filter.";
