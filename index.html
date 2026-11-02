@@ -192,17 +192,21 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 .fbtn[aria-pressed="true"]:hover{text-decoration:none}
 .search-box{flex:1;min-width:200px}
 .search-box input{width:100%;padding:11px 16px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
-.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;text-align:left;width:100%;color:var(--ink)}
+.lib-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media (max-width:1020px){.lib-grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:860px){.lib-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.lib-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:400px){.lib-grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;text-align:left;width:100%;color:var(--ink)}
 .card:hover{border-color:var(--accent)}
 .card .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.card .first-clue{font-family:"Bricolage Grotesque";font-weight:800;font-size:2.3rem;line-height:1;color:var(--accent-deep)}
-.card .first-unit{font-weight:800;color:var(--ink2);font-size:var(--fs-body)}
+.card .play-tri{color:var(--accent-ink);font-size:.95rem;line-height:1;padding-top:4px;flex-shrink:0;opacity:.85}
+.card .first-clue{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.6rem;line-height:1.05;color:var(--accent-deep)}
+.card .first-unit{font-weight:800;color:var(--ink2);font-size:.95rem}
 .card .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:var(--fs-label);font-weight:800;padding:3px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);color:var(--ink2)}
 .tag.type{background:var(--teal-bg);color:var(--teal);border-color:transparent}
 .card .tags .tag.theme-t{background:transparent;border-color:transparent;border-radius:0;color:#7A6658;padding:2px 0 0;flex:1 1 100%;font-weight:600;text-align:left}
-.card .play-line{font-weight:800;color:var(--accent-ink);font-size:var(--fs-body)}
 .diff{font-size:var(--fs-label);color:var(--ink2)}
 .no-results{grid-column:1/-1;text-align:center;color:var(--ink2);padding:34px;border:1.5px dashed var(--line);border-radius:var(--radius)}
 
@@ -902,9 +906,8 @@ function renderLibrary(){
     var card = document.createElement("button");
     card.type = "button"; card.className = "card";
     card.innerHTML =
-      '<span class="card-top"><span><span class="first-clue"></span><br><span class="first-unit"></span></span></span>' +
-      '<span class="tags"><span class="tag cat-tag"></span><span class="tag type"></span><span class="tag theme-t"></span></span>' +
-      '<span class="play-line">Play this mystery →</span>';
+      '<span class="card-top"><span><span class="first-clue"></span><br><span class="first-unit"></span></span><span class="play-tri" aria-hidden="true">▶</span></span>' +
+      '<span class="tags"><span class="tag cat-tag"></span><span class="tag type"></span><span class="tag theme-t"></span></span>';
     card.querySelector(".first-clue").textContent = e.clues[0].n;
     card.querySelector(".first-unit").textContent = e.clues[0].u;
     var catTag = card.querySelector(".cat-tag"); catTag.textContent = e.category; catTag.style.background = CAT_COLORS[e.category] || "var(--ink)";
