@@ -280,7 +280,7 @@ footer .copyright p{margin:0}
           <span class="chip gold" id="chipStage">Clue 1 of 5</span>
           <button type="button" class="chip chip--link" id="chipGrade" title="Open the Grade 6 library">Grade 6</button>
           <button type="button" class="chip chip--link" id="chipCategory" title="Open this category in the library">History</button>
-          <button type="button" class="chip chip--link" id="chipKind" title="Open this kind in the library">Event</button>
+          <button type="button" class="chip chip--link" id="chipKind" title="Open this type in the library">Event</button>
         </div>
         <div style="display:flex;gap:10px;align-items:center">
           <div class="stage-dots" id="stageDots" aria-label="Stage progress"></div>
@@ -294,7 +294,7 @@ footer .copyright p{margin:0}
             <div class="entry-chips">
               <button type="button" class="chip chip--link" id="startChipCategory" title="Open this category in the library">History</button>
               <button type="button" class="chip chip--link" id="startChipGrade" title="Open the Grade 6 library">Grade 6</button>
-              <button type="button" class="chip chip--link" id="startChipKind" title="Open this kind in the library">Event</button>
+              <button type="button" class="chip chip--link" id="startChipKind" title="Open this type in the library">Event</button>
             </div>
             <h3 class="entry-question">Can you name it in <span class="five">5?</span></h3>
             <p class="entry-sub">5 clues · then the reveal</p>
@@ -355,7 +355,7 @@ footer .copyright p{margin:0}
 
     <div class="filters">
       <div class="filter-row" role="group" aria-label="Type filter">
-        <span class="flabel">Kind</span>
+        <span class="flabel">Type</span>
         <button class="fbtn" data-ftype="All" aria-pressed="true" type="button">All</button>
         <button class="fbtn" data-ftype="Place" aria-pressed="false" type="button">Places</button>
         <button class="fbtn" data-ftype="Event" aria-pressed="false" type="button">Events</button>
@@ -387,7 +387,7 @@ footer .copyright p{margin:0}
 <footer id="siteFooter">
   <div class="wrap copyright">
     <p>Copyright © 2026 Name That Thing by Fawn Nguyen.</p>
-    <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
   </div>
 </footer>
 
@@ -1133,6 +1133,7 @@ function renderPlayer(){
   }
   $("prevBtn").disabled = false;
   $("skipRevealBtn").style.visibility = rev ? "hidden" : "visible";
+  disarmSkip();
 }
 
 function setStage(n){
@@ -1360,7 +1361,12 @@ $("beginBtn").addEventListener("click", beginEntry);
 ["chipGrade","startChipGrade"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForGrade(); }); });
 ["chipCategory","startChipCategory"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForCategory(currentEntry().category); }); });
 ["chipKind","startChipKind"].forEach(function(id){ var el = $(id); if (el) el.addEventListener("click", function(){ goLibraryForKind(currentEntry().type); }); });
-$("skipRevealBtn").addEventListener("click", function(){ setStage(5); });
+var skipArmed = false, skipArmTimer = null;
+function disarmSkip(){ skipArmed = false; if (skipArmTimer){ clearTimeout(skipArmTimer); skipArmTimer = null; } var b = $("skipRevealBtn"); if (b) b.textContent = "Skip to reveal"; }
+$("skipRevealBtn").addEventListener("click", function(){
+  if (!skipArmed){ skipArmed = true; this.textContent = "Sure? Tap again to reveal"; skipArmTimer = setTimeout(disarmSkip, 4000); return; }
+  disarmSkip(); setStage(5);
+});
 $("restartBtn").addEventListener("click", function(){ setStage(0); });
 $("fsBtn").addEventListener("click", function(){
   var el = $("playerShell");
