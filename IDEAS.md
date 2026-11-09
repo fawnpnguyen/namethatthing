@@ -18,6 +18,29 @@ A running brainstorm of puzzle ideas. Anyone can add; Fawn and Claude settle the
 
 ## Brainstorm
 
+### Fawn's ideas (built first)
+
+| Idea | Shelf | Type | Suggested grade | Notes | Status |
+| --- | --- | --- | --- | --- | --- |
+| Basketball | Sports & Leisure | Thing | 3–5 (or K) | 10-foot hoop, 5 players a side, 94-foot court. Simple enough for little kids too. | Fawn idea |
+| Soccer | Sports & Leisure | Thing | 3–5 | 11 players, 90 minutes, the world's most-watched sport | Fawn idea |
+| Baseball | Sports & Leisure | Thing | 3–5 | 9 innings, 90 feet between bases, 108 stitches on the ball | Fawn idea |
+| American football | Sports & Leisure | Thing | 3–5 | 100-yard field, 11 players, 4 quarters | Fawn idea |
+| Tennis, hockey, volleyball, swimming, etc. | Sports & Leisure | Thing | 3–8 | One puzzle per major sport; mix in sports popular outside the US (cricket, badminton) | Fawn idea |
+| The Diary of a Young Girl (Anne Frank) | Arts & Literature | Thing | 8 | Often read in 8th grade. 761 days in hiding, 70+ languages. Handle with care and a respectful tone. | Fawn idea |
+| The Last Supper (Leonardo da Vinci) | Arts & Literature | Thing | 7–8 | Keep it about the art: its size, years to paint, the 20+ year restoration | Fawn idea |
+| Disneyland or Walt Disney World | Entertainment | Place | 6 | Visitors a year, opening year, park acreage. No logos, castle images, or characters. | Fawn idea |
+| Six Flags | Entertainment | Place | 6 | Roller coaster heights and speeds, number of parks. Brand images off-limits. | Fawn idea |
+| Yellowstone National Park | Geography | Place | 6 | 1872 (first national park), geysers, Old Faithful's timing | Fawn idea |
+| Canada | Geography | Place | 6 | Longest coastline on Earth, lakes, 10 provinces | Fawn idea |
+| Nigeria | Geography | Place | 7 | Most populous country in Africa, Nollywood, 500+ languages | Fawn idea |
+| Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia, India (done), Vietnam (done) | Fawn idea |
+| The White House | History | Place | 6 | 132 rooms, 35 bathrooms, 1800 first resident. Keep it about the building, never current politics. | Fawn idea |
+| US states | Geography | Place | 4–6 | Pick by kid fame and great numbers: Alaska (biggest), Texas, California, Hawaii, Florida, New York | Fawn idea |
+| Taj Mahal | Arts & Literature | Place | 7 | Also on Claude's list below | Fawn idea |
+| Niagara Falls | Geography | Place | 3–5 | Also on Claude's list below | Fawn idea |
+| Mississippi River | Geography | Place | 6 | Already built (grade 6) | Fawn idea |
+
 ### Kindergarten ideas
 
 Kindergarten puzzles need their own format before we build any: small numbers (mostly 0–20), concrete things kids can picture, clues read aloud by the teacher, and "math" that's counting and comparing (K.CC). To be designed before the first one.
