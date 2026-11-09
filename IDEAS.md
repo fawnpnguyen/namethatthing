@@ -12,9 +12,26 @@ A running brainstorm of puzzle ideas. Anyone can add; Fawn and Claude settle the
 
 ## Ready to build
 
+Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinnest.
+
 | Idea | Grade | Shelf | Type | Notes |
 | --- | --- | --- | --- | --- |
-| _(none yet: Fawn and Claude settle these)_ | | | | |
+| The Diary of a Young Girl (Anne Frank) | 8 | Arts & Literature | Thing | Often read in 8th grade. 761 days in hiding, 70+ languages. Respectful tone. |
+| The Last Supper (Leonardo da Vinci) | 8 | Arts & Literature | Thing | Keep it about the art: size, years to paint, the 20+ year restoration |
+| Nigeria | 8 | Geography | Place | Most populous country in Africa, Nollywood, 500+ languages. Population suits scientific notation. |
+| Baseball | 8 | Sports & Leisure | Thing | 9 innings, 90 feet between bases, 108 stitches, pitch speeds |
+| Tennis | 8 | Sports & Leisure | Thing | Serve speeds, court size, the oldest major (Wimbledon, 1877) |
+| Soccer | 7 | Sports & Leisure | Thing | 11 players, 90 minutes, the world's most-watched sport |
+| American football | 7 | Sports & Leisure | Thing | 100-yard field, 11 players, 4 quarters |
+| Six Flags | 7 | Entertainment | Place | Roller coaster heights and speeds (great for rates), number of parks. No brand images. |
+| Yellowstone National Park | 7 | Science & Nature | Place | 1872 (first national park), geysers, Old Faithful's timing |
+| Canada | 7 | Geography | Place | Longest coastline on Earth, lakes, 10 provinces |
+| Alaska | 7 | Geography | Place | Biggest US state by far (more than twice Texas), daylight hours, Denali |
+| Taj Mahal | 7 | Arts & Literature | Place | Years to build, workers, elephants used |
+| Niagara Falls | 7 | Geography | Place | Gallons per second (rates), height, 3 falls |
+| Disneyland or Walt Disney World | 6 | Entertainment | Place | Visitors a year, opening year, park acreage. No logos, castle images, or characters. |
+| The White House | 6 | History | Place | 132 rooms, 35 bathrooms, 1800 first resident. The building only, never current politics. |
+| Basketball | 6 | Sports & Leisure | Thing | 10-foot hoop, 5 players a side, 94-foot court |
 
 ## Brainstorm
 
@@ -22,24 +39,10 @@ A running brainstorm of puzzle ideas. Anyone can add; Fawn and Claude settle the
 
 | Idea | Shelf | Type | Suggested grade | Notes | Status |
 | --- | --- | --- | --- | --- | --- |
-| Basketball | Sports & Leisure | Thing | 3–5 (or K) | 10-foot hoop, 5 players a side, 94-foot court. Simple enough for little kids too. | Fawn idea |
-| Soccer | Sports & Leisure | Thing | 3–5 | 11 players, 90 minutes, the world's most-watched sport | Fawn idea |
-| Baseball | Sports & Leisure | Thing | 3–5 | 9 innings, 90 feet between bases, 108 stitches on the ball | Fawn idea |
-| American football | Sports & Leisure | Thing | 3–5 | 100-yard field, 11 players, 4 quarters | Fawn idea |
-| Tennis, hockey, volleyball, swimming, etc. | Sports & Leisure | Thing | 3–8 | One puzzle per major sport; mix in sports popular outside the US (cricket, badminton) | Fawn idea |
-| The Diary of a Young Girl (Anne Frank) | Arts & Literature | Thing | 8 | Often read in 8th grade. 761 days in hiding, 70+ languages. Handle with care and a respectful tone. | Fawn idea |
-| The Last Supper (Leonardo da Vinci) | Arts & Literature | Thing | 7–8 | Keep it about the art: its size, years to paint, the 20+ year restoration | Fawn idea |
-| Disneyland or Walt Disney World | Entertainment | Place | 6 | Visitors a year, opening year, park acreage. No logos, castle images, or characters. | Fawn idea |
-| Six Flags | Entertainment | Place | 6 | Roller coaster heights and speeds, number of parks. Brand images off-limits. | Fawn idea |
-| Yellowstone National Park | Geography | Place | 6 | 1872 (first national park), geysers, Old Faithful's timing | Fawn idea |
-| Canada | Geography | Place | 6 | Longest coastline on Earth, lakes, 10 provinces | Fawn idea |
-| Nigeria | Geography | Place | 7 | Most populous country in Africa, Nollywood, 500+ languages | Fawn idea |
-| Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia, India (done), Vietnam (done) | Fawn idea |
-| The White House | History | Place | 6 | 132 rooms, 35 bathrooms, 1800 first resident. Keep it about the building, never current politics. | Fawn idea |
-| US states | Geography | Place | 4–6 | Pick by kid fame and great numbers: Alaska (biggest), Texas, California, Hawaii, Florida, New York | Fawn idea |
-| Taj Mahal | Arts & Literature | Place | 7 | Also on Claude's list below | Fawn idea |
-| Niagara Falls | Geography | Place | 3–5 | Also on Claude's list below | Fawn idea |
-| Mississippi River | Geography | Place | 6 | Already built (grade 6) | Fawn idea |
+| More sports: hockey, volleyball, swimming, cricket, badminton | Sports & Leisure | Thing | 6–8 | One puzzle per sport; include sports popular outside the US | Fawn idea |
+| Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia | Fawn idea |
+| More US states | Geography | Place | 6–8 | Texas, California, Hawaii, Florida, New York | Fawn idea |
+| Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
 ### Kindergarten ideas
 
@@ -70,7 +73,6 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | Honeybee hive | Science & Nature | Thing | bees per hive, flowers visited per pound of honey | Claude idea |
 | Monarch butterfly migration | Science & Nature | Event | miles flown, generations per year | Claude idea |
 | Giant panda | Science & Nature | Thing | hours eating per day, pounds of bamboo, newborn weight | Claude idea |
-| Niagara Falls | Geography | Place | gallons per second, height, 3 falls | Claude idea |
 | The Olympic Games | Sports & Leisure | Event | 5 rings, countries competing, every 4 years | Claude idea |
 | LEGO bricks | Entertainment | Thing | bricks made per year, ways to combine six 2×4 bricks | Claude idea |
 
@@ -80,7 +82,6 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | --- | --- | --- | --- | --- |
 | Great Pyramid of Giza | History | Place | blocks, years as tallest structure, height | Claude idea |
 | Machu Picchu | History | Place | elevation, rediscovery year, stone fitting | Claude idea |
-| Taj Mahal | Arts & Literature | Place | years to build, workers, elephants used | Claude idea |
 | Mars | Science & Nature | Place | day length, Olympus Mons height, rovers sent | Claude idea |
 | The Great Wave (Hokusai) | Arts & Literature | Thing | year, prints made, the series' 36 views | Claude idea |
 | Marie Curie | Science & Nature | People | 2 Nobel Prizes, 2 elements discovered | Claude idea |
@@ -98,3 +99,4 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | --- | --- | --- | --- |
 | The sinking of the Titanic | 6 | 2026 | Fawn's original idea (the gym, the 20 to 1 ratio) |
 | Vietnam | 8 | 2026-11-09 | Fawn's idea |
+| The Mississippi River | 6 | 2026 | Also on Fawn's list |
