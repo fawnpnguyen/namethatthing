@@ -47,6 +47,7 @@ button{font:inherit;cursor:pointer}
 body[data-view="library"] #landingTagline,body[data-view="library"] #homeActions{display:none!important}
 .landing{padding:58px 0 10px;text-align:center}
 .site-logo{display:block;width:88px;height:88px;margin:0 auto 14px}
+.logo-btn{display:block;background:none;border:0;padding:0;margin:0 auto;cursor:pointer}
 .site-name{background:none;border:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(1.3rem,3vw,1.75rem);letter-spacing:.32em;padding:8px 4px 8px calc(4px + .32em)}/* padding-left adds back the trailing letter-spacing after the final G, so the glyphs—not the text block—sit on the page center */
 .site-name:hover{color:var(--accent-ink)}
 .landing-tagline{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:var(--fs-tagline);font-weight:800;line-height:1.02;margin:24px 0 0}
@@ -290,7 +291,7 @@ footer .copyright p{margin:0}
 
 <header class="landing">
   <div class="wrap">
-    <img class="site-logo" src="/logo.svg?v=2" alt="Name That Thing logo—a 5 flowing into a question mark" width="88" height="88" />
+    <button class="logo-btn" id="logoHomeBtn" type="button" aria-label="Name That Thing—back to the home page"><img class="site-logo" src="/logo.svg?v=2" alt="" width="88" height="88" /></button>
     <button class="site-name" id="homeBtn" type="button" aria-label="Name That Thing—back to the home page">NAME THAT THING</button>
     <h1 class="landing-tagline" id="landingTagline">Can you name it in <span class="five">5?</span></h1>
     <div class="grade-grid" id="gradeGrid" role="group" aria-label="Grade selector"></div>
@@ -1544,6 +1545,12 @@ if (_libBackBtn) _libBackBtn.addEventListener("click", function(){
   $("play").scrollIntoView({behavior:"smooth"});
 });
 $("homeBtn").addEventListener("click", function(){
+  showHomeView();
+  renderGradeSelector();
+  window.scrollTo({top:0, behavior:"smooth"});
+});
+var _logoBtn = $("logoHomeBtn");
+if (_logoBtn) _logoBtn.addEventListener("click", function(){
   showHomeView();
   renderGradeSelector();
   window.scrollTo({top:0, behavior:"smooth"});
