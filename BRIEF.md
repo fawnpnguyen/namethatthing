@@ -7,6 +7,7 @@ This file is the single source of truth for building Name That Thing puzzles. Mu
 - Write **10 new entries** for Name That Thing (this repo, `index.html`).
 - Before writing, count the entries in ASSIGN by grade and by category. Pick the grades and shelves with the fewest entries, and say which ones you picked in the batch report.
 - Only grades 6, 7, and 8 for now. Target: 10 entries per shelf, 60 per grade.
+- Until the grades balance out, weight batches toward grade 8 first, then grade 7 (roughly 6 grade 8 and 4 grade 7 per batch). Within a grade, fill the emptiest shelves first.
 - Choose topics yourself: things a middle schooler might recognize, with numbers you can source.
 - If Fawn adds topic ideas to her message, use those first.
 - Don't change any existing entry unless Fawn asks.
@@ -87,7 +88,7 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 
 - Use only images you can trace: public domain (NASA, Library of Congress, pre-1929 works), a Creative Commons license, or one you generated yourself.
 - No film stills, posters, book covers, box art, game screenshots, logos, characters, or news photos unless you can show the license. Generated images must not copy a signature design (a famous scene, a mascot, a trophy).
-- Every image gets a credit line: source, creator if known, license, or "Illustration created for Name That Thing."
+- Every image gets a credit line: source, creator if known, license, or "Illustration generated for Name That Thing."
 - Alt text must match what the story says.
 
 ## Delivery
