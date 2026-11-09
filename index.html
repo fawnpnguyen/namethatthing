@@ -440,7 +440,7 @@ footer .copyright p{margin:0}
   <div class="wrap copyright">
     <img class="footer-logo" src="/logo.svg?v=2" alt="" width="34" height="34" />
     <p>Copyright © 2026 Name That Thing by Fawn Nguyen.</p>
-    <p><a href="#about">About</a></p>
+    <p><a href="#about" id="aboutLink">About</a></p>
     <p>Puzzles and text: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
   </div>
 </footer>
@@ -1089,7 +1089,7 @@ function $(id){ return document.getElementById(id); }
 
 /* ---------- Views: home (landing) / play (player is the last thing) / library (its own view) ---------- */
 function applyView(){
-  var howEl = $("how"), footEl = $("siteFooter");
+  var howEl = $("how"), footEl = $("siteFooter"), aboutEl = $("about");
   var taglineEl = $("landingTagline");
   if (state.view === "home"){
     if (taglineEl) taglineEl.hidden = false;
@@ -1097,6 +1097,7 @@ function applyView(){
     $("play").hidden = true;
     $("library").hidden = true;
     if (howEl) howEl.hidden = false;
+    if (aboutEl) aboutEl.hidden = false;
     if (footEl) footEl.hidden = false;
   } else if (state.view === "library"){
     if (taglineEl) taglineEl.hidden = true;
@@ -1104,6 +1105,7 @@ function applyView(){
     $("play").hidden = true;
     $("library").hidden = false;
     if (howEl) howEl.hidden = true;
+    if (aboutEl) aboutEl.hidden = true;
     if (footEl) footEl.hidden = false;
   } else {
     if (taglineEl) taglineEl.hidden = false;
@@ -1111,6 +1113,7 @@ function applyView(){
     $("play").hidden = false;
     $("library").hidden = true;
     if (howEl) howEl.hidden = true;
+    if (aboutEl) aboutEl.hidden = true;
     if (footEl) footEl.hidden = true;
   }
   document.body.setAttribute("data-view", state.view);
@@ -1544,6 +1547,12 @@ $("homeBtn").addEventListener("click", function(){
   showHomeView();
   renderGradeSelector();
   window.scrollTo({top:0, behavior:"smooth"});
+});
+var _aboutLink = $("aboutLink");
+if (_aboutLink) _aboutLink.addEventListener("click", function(ev){
+  ev.preventDefault();
+  showHomeView();
+  setTimeout(function(){ var a = $("about"); if (a) a.scrollIntoView({behavior:"smooth"}); }, 60);
 });
 document.addEventListener("keydown", function(ev){
   var tag = (ev.target && ev.target.tagName) || "";
