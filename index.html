@@ -105,6 +105,10 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 .math-box .math-q{font-weight:800;font-size:var(--fs-body);margin:0 0 10px;color:var(--ink)}
 .math-box .math-a{margin:0;color:var(--ink2);font-size:var(--fs-body)}
 .math-box .math-a b{color:var(--accent-deep)}
+.math-box .math-a{display:none}
+.math-box.open .math-a{display:block}
+.ans-toggle{margin:2px 0 4px;background:transparent;border:2px solid var(--accent-deep);color:var(--accent-deep);border-radius:999px;padding:8px 18px;font-family:inherit;font-weight:800;font-size:var(--fs-label);letter-spacing:.06em;cursor:pointer}
+.ans-toggle:hover{background:var(--gold-bg)}
 .player-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:20px 22px 24px}
 .nav-group{display:flex;gap:10px;flex-wrap:wrap}
 .pbtn{border-radius:999px;padding:12px 22px;font-weight:800;border:2px solid #C7AA97;background:var(--surface);color:var(--ink)}
@@ -1205,7 +1209,14 @@ function renderPlayer(){
       var a = document.createElement("p"); a.className = "math-a";
       var b = document.createElement("b"); b.textContent = "Worked answer: ";
       a.appendChild(b); a.appendChild(document.createTextNode(m.a));
-      box.appendChild(h); box.appendChild(q); box.appendChild(a);
+      var t = document.createElement("button"); t.type = "button"; t.className = "ans-toggle";
+      t.textContent = "Show worked answer"; t.setAttribute("aria-expanded", "false");
+      t.addEventListener("click", function(){
+        var open = box.classList.toggle("open");
+        t.textContent = open ? "Hide worked answer" : "Show worked answer";
+        t.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      box.appendChild(h); box.appendChild(q); box.appendChild(t); box.appendChild(a);
       ml.appendChild(box);
     });
     var list = $("recapList"); list.innerHTML = "";
