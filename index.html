@@ -163,10 +163,12 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 /* ---------- Grade banks ---------- */
 .grade-grid{display:flex;flex-wrap:nowrap;gap:6px;justify-content:center;max-width:1080px;margin:42px auto 0}
 .gbtn{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px 2px 6px;border-radius:10px;border:2px solid var(--line);background:var(--surface2);color:var(--ink);font-weight:800;font-size:1rem;line-height:1.1;text-align:center}
+.gbtn-wrap{flex:1 1 0;min-width:0;display:flex}.gbtn-wrap>.gbtn{flex:1 1 0;min-width:0;width:100%}
 .gbtn small{display:block;font-size:.55rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);margin-top:2px;white-space:nowrap}
 @media (max-width:699px){
   .grade-grid{flex-wrap:wrap}
   .gbtn{flex:0 1 auto;min-width:52px}
+  .gbtn-wrap{flex:0 1 auto}.gbtn-wrap>.gbtn{min-width:52px}
 }
 .gbtn.live{background:var(--gold-bg)}
 .gbtn[aria-pressed="true"],.gbtn.featured{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -1331,7 +1333,7 @@ function renderGradeSelector(){
     var isActiveGrade = ACTIVE_GRADES.indexOf(g) !== -1;
     var b = document.createElement("button");
     b.type = "button"; b.className = "gbtn";
-    if (!isActiveGrade){ b.disabled = true; b.innerHTML = (g==="K"?"K":g); b.setAttribute("aria-label", gradeName(g)+", coming soon"); if (g==="HS") b.title = "High School, coming soon"; }
+    if (!isActiveGrade){ b.disabled = true; b.innerHTML = (g==="K"?"K":g); b.setAttribute("aria-label", gradeName(g)+", coming soon"); }
     else {
       b.classList.add("live");
       b.setAttribute("aria-pressed", (!state.home && state.grade === g) ? "true" : "false");
@@ -1340,7 +1342,8 @@ function renderGradeSelector(){
       b.innerHTML = (g==="K"?"K":g) + "<small>" + n + " live</small>";
       b.addEventListener("click", function(){ chooseGrade(g); });
     }
-    grid.appendChild(b);
+    if (g==="HS"){ var w = document.createElement("span"); w.className = "gbtn-wrap"; w.title = "High School, coming soon"; w.appendChild(b); grid.appendChild(w); }
+    else grid.appendChild(b);
   });
 }
 function chooseGrade(g){
