@@ -7,6 +7,7 @@ This file is the single source of truth for building Name That Thing puzzles. Mu
 - Write **10 new entries** for Name That Thing (this repo, `index.html`).
 - Before writing, count the entries in ASSIGN by grade and by category. Pick the grades and shelves with the fewest entries, and say which ones you picked in the batch report.
 - Only grades 6, 7, and 8 for now. Target: 10 entries per shelf, 60 per grade.
+- Future levels (not yet): high school is one level, "High School," never split into grades 9–12. Its math draws on the Common Core high school categories (exponential growth, percent change over time, statistics, modeling) rather than grade-level standards.
 - Until the grades balance out, weight batches toward grade 8 first, then grade 7 (roughly 6 grade 8 and 4 grade 7 per batch). Within a grade, fill the emptiest shelves first.
 - Choose topics from the **Ready to build** section of IDEAS.md first, for the grade and shelf you're filling. If none fit, choose topics yourself: things a middle schooler might recognize, with numbers you can source. You may add new ideas to IDEAS.md's Brainstorm section (status `Muse idea`), but never move ideas into Ready to build; Fawn and Claude do that.
 - If Fawn adds topic ideas to her message, use those first.
