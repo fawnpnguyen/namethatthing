@@ -257,6 +257,9 @@ button.chip{font-family:inherit;appearance:none;-webkit-appearance:none}
 
 /* ---------- How it runs ---------- */
 #how{padding-top:132px;padding-bottom:110px}
+#about{padding-bottom:110px}
+.about-body{max-width:44em}
+.about-body p{color:var(--ink2);font-size:var(--fs-body);margin:0 0 14px}
 .how-steps-wrap{position:relative}
 .steps{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
@@ -417,12 +420,28 @@ footer .copyright p{margin:0}
 
   </div>
 </section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="about-body">
+      <p>I’m Fawn Nguyen. I taught for 30 years—science first, then middle school math—and I’m the person behind <a href="https://www.visualpatterns.org">Visual Patterns</a>.</p>
+      <p>Name That Thing is free and ad-free, and it will stay that way. No logins, no prep.</p>
+      <p>Every number in every puzzle links to its source, right on the puzzle itself. I build the puzzles with help from AI, and every number gets checked against a specific source before it goes up.</p>
+      <p>New here? <a href="#how">How a round runs</a> shows how a puzzle plays in class.</p>
+      <p>If you spot a number that’s off, tell me—I’d rather be corrected than wrong in front of your class.</p>
+      <p>Contact: [email coming soon]</p>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer id="siteFooter">
   <div class="wrap copyright">
     <img class="footer-logo" src="/logo.svg?v=2" alt="" width="34" height="34" />
     <p>Copyright © 2026 Name That Thing by Fawn Nguyen.</p>
+    <p><a href="#about">About</a></p>
     <p>Puzzles and text: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
   </div>
 </footer>
