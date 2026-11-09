@@ -21,6 +21,15 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Nigeria | 8 | Geography | Place | Most populous country in Africa, Nollywood, 500+ languages. Population suits scientific notation. |
 | Baseball | 8 | Sports & Leisure | Thing | 9 innings, 90 feet between bases, 108 stitches, pitch speeds |
 | Tennis | 8 | Sports & Leisure | Thing | Serve speeds, court size, the oldest major (Wimbledon, 1877) |
+| Albert Einstein | 8 | Science & Nature | People | E = mc², the speed of light (scientific notation), Nobel Prize 1921 |
+| Ada Lovelace | 8 | Science & Nature | People | First computer program (1843); her notes ran 3× longer than the article they annotated |
+| Maryam Mirzakhani | 8 | Science & Nature | People | First woman to win the Fields Medal (2014), the top prize in math; born in Iran |
+| The Sistine Chapel | 8 | Arts & Literature | Place | Keep it about the art: Michelangelo's 4 years on the ceiling, 300+ figures, visitors a day |
+| Katherine Johnson | 7 | Science & Nature | People | NASA mathematician; checked John Glenn's orbit by hand; lived to 101 |
+| Mahatma Gandhi | 7 | History | People | Salt March: 240 miles in 24 days, a ready-made rate problem |
+| Michelangelo | 7 | Arts & Literature | People | Build around David (17 feet, one block of marble) so it doesn't repeat the Sistine Chapel puzzle |
+| Mona Lisa | 6 | Arts & Literature | Thing | Only about 30 × 21 inches; stolen in 1911 and missing 2 years; millions of visitors a year |
+| Mother Teresa | 6 | History | People | Keep it about her humanitarian work: Nobel Peace Prize 1979, the people her missions served |
 | Soccer | 7 | Sports & Leisure | Thing | 11 players, 90 minutes, the world's most-watched sport |
 | American football | 7 | Sports & Leisure | Thing | 100-yard field, 11 players, 4 quarters |
 | Six Flags | 7 | Entertainment | Place | Roller coaster heights and speeds (great for rates), number of parks. No brand images. |
@@ -42,6 +51,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | More sports: hockey, volleyball, swimming, cricket, badminton | Sports & Leisure | Thing | 6–8 | One puzzle per sport; include sports popular outside the US | Fawn idea |
 | Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia | Fawn idea |
 | More US states | Geography | Place | 6–8 | Texas, California, Hawaii, Florida, New York | Fawn idea |
+| Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
 ### Kindergarten ideas
@@ -85,9 +95,7 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | Mars | Science & Nature | Place | day length, Olympus Mons height, rovers sent | Claude idea |
 | The Great Wave (Hokusai) | Arts & Literature | Thing | year, prints made, the series' 36 views | Claude idea |
 | Marie Curie | Science & Nature | People | 2 Nobel Prizes, 2 elements discovered | Claude idea |
-| Katherine Johnson | Science & Nature | People | years at NASA, missions she calculated | Claude idea |
 | Mae Jemison | Science & Nature | People | first Black woman in space, days in orbit, languages spoken | Claude idea |
-| Ada Lovelace | Science & Nature | People | year of the first computer program, notes 3× longer than the article | Claude idea |
 | Roberto Clemente | Sports & Leisure | People | 3,000 hits, 12 Gold Gloves, humanitarian work | Claude idea |
 | Jackie Robinson | Sports & Leisure | People | 42, year he broke the color barrier, steals of home | Claude idea |
 | Frida Kahlo | Arts & Literature | People | self-portraits painted, years of her art | Claude idea |
