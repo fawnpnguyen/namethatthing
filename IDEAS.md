@@ -19,7 +19,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | The Diary of a Young Girl (Anne Frank) | 8 | Arts & Literature | Thing | Often read in 8th grade. 761 days in hiding, 70+ languages. Respectful tone. |
 | The Last Supper (Leonardo da Vinci) | 8 | Arts & Literature | Thing | Keep it about the art: size, years to paint, the 20+ year restoration |
 | Nigeria | 8 | Geography | Place | Most populous country in Africa, Nollywood, 500+ languages. Population suits scientific notation. |
-| Baseball | 8 | Sports & Leisure | Thing | 9 innings, 90 feet between bases, 108 stitches, pitch speeds |
+| Cricket | 8 | Sports & Leisure | Thing | Candidate clues: 22 yards (the pitch), 6 balls per over, 11 players a side, 5 days (a Test match), 2.5 billion fans — pick numbers that don't say "cricket" out loud. Math: grade 8 standards; scientific notation for the fan count is a natural fit. Queued for the next batch (Nov 13, 2026). |
 | Tennis | 8 | Sports & Leisure | Thing | Serve speeds, court size, the oldest major (Wimbledon, 1877) |
 | Albert Einstein | 8 | Science & Nature | People | E = mc², the speed of light (scientific notation), Nobel Prize 1921 |
 | Ada Lovelace | 8 | Science & Nature | People | First computer program (1843); her notes ran 3× longer than the article they annotated |
@@ -85,6 +85,7 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | Giant panda | Science & Nature | Thing | hours eating per day, pounds of bamboo, newborn weight | Claude idea |
 | The Olympic Games | Sports & Leisure | Event | 5 rings, countries competing, every 4 years | Claude idea |
 | LEGO bricks | Entertainment | Thing | bricks made per year, ways to combine six 2×4 bricks | Claude idea |
+| Baseball | Sports & Leisure | Thing | Too guessable for grade 8. Rework the math for grade school, e.g., 4 × 90 = 360 feet around the bases; 9 innings × 3 outs = 27 outs per team. | Claude idea |
 
 ### Grades 6–8 ideas
 
@@ -100,6 +101,7 @@ Kindergarten puzzles need their own format before we build any: small numbers (m
 | Jackie Robinson | Sports & Leisure | People | 42, year he broke the color barrier, steals of home | Claude idea |
 | Frida Kahlo | Arts & Literature | People | self-portraits painted, years of her art | Claude idea |
 | Yo-Yo Ma | Arts & Literature | People | Grammy wins, age at first performance | Claude idea |
+| Baseball diamond diagonal (Pythagorean theorem) | Sports & Leisure | Math idea | Saved from the retired grade 8 Baseball entry: the infield is a 90-ft square, so home plate to second base is 90√2 ≈ 127.3 ft. Keep as a math question for a future square-shaped entry. | Claude idea |
 
 ## Built
 
