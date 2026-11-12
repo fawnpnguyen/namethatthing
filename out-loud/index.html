@@ -245,9 +245,9 @@
       .host-line:empty{ display:none; }
 
       .deal-note{
-        background:var(--card); border:2px dashed var(--copper); border-radius:12px;
-        padding:12px 18px; text-align:center; font-size:1.05rem; font-weight:800;
-        margin-bottom:14px;
+        /* A heads-up, not a button: no box, so nobody tries to tap it. */
+        text-align:center; font-size:.95rem; font-weight:600; font-style:italic;
+        color:var(--muted); margin:0 0 12px;
       }
 
       /* Game controls—inside the ☰ menu panel */
@@ -612,7 +612,7 @@
           batch.push(state.bank.pop());
         }
         state.bankFresh = false;
-        state.dealNote = reshuffled ? "You've played every puzzle here! Reshuffling." : "";
+        state.dealNote = reshuffled ? "You've played every puzzle here, so they've been reshuffled. Some repeats ahead!" : "";
         return batch;
       }
 
