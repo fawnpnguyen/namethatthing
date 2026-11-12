@@ -203,7 +203,14 @@
       .score-num{ font-size:3rem; font-weight:900; line-height:1.05; color:var(--tc); font-variant-numeric:tabular-nums; }
 
       /* Game header + ☰ menu (controls, end puzzle, host help live here) */
-      .game-header{ display:flex; justify-content:flex-end; align-items:center; margin:16px 0 10px; }
+      .game-header{ display:flex; justify-content:flex-end; align-items:center; gap:10px; margin:16px 0 10px; }
+      /* Full screen: same pill as the classroom site's button. The whole
+         page goes full screen, so the reveal and final scores stay full
+         screen too. Hidden where the browser can't do it (iPhone). */
+      .fs-btn{
+        height:48px; border-radius:999px; border:2px solid var(--line); background:var(--card);
+        color:var(--ink); font-size:1rem; font-weight:800; padding:0 18px;
+      }
       .menu-btn{
         width:48px; height:48px; border-radius:12px; border:2px solid var(--line);
         background:var(--card); color:var(--ink); font-size:1.35rem; font-weight:800; line-height:1;
@@ -402,6 +409,7 @@
       <!-- GAME -->
       <section id="screen-game" class="hidden">
         <div class="game-header">
+          <button type="button" class="fs-btn hidden" id="fs-btn">⛶ Full screen</button>
           <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu-panel" aria-label="Game menu" title="Game menu">☰</button>
         </div>
         <div class="menu-panel hidden" id="menu-panel">
@@ -1421,6 +1429,25 @@
         var open = panel.classList.toggle("hidden") === false;
         $("help-btn").setAttribute("aria-expanded", open ? "true" : "false");
       });
+
+      // ---------- Full screen ----------
+      (function(){
+        var root = document.documentElement, btn = $("fs-btn");
+        var can = !!(document.fullscreenEnabled || document.webkitFullscreenEnabled);
+        if (!can){ return; }
+        btn.classList.remove("hidden");
+        function isFull(){ return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+        function sync(){ btn.textContent = isFull() ? "\u26f6 Exit full screen" : "\u26f6 Full screen"; }
+        btn.addEventListener("click", function(){
+          try {
+            if (isFull()){ (document.exitFullscreen || document.webkitExitFullscreen).call(document); }
+            else { (root.requestFullscreen || root.webkitRequestFullscreen).call(root); }
+          } catch(e){}
+        });
+        document.addEventListener("fullscreenchange", sync);
+        document.addEventListener("webkitfullscreenchange", sync);
+        sync();
+      })();
 
       function escapeHtml(s){
         return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
