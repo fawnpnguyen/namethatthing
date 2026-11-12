@@ -1119,7 +1119,7 @@
         nb.textContent = state.clueIdx >= 4
           ? "Show the answer"
           : "Tap for clue " + (state.clueIdx + 2) + " of 5";
-        nb.addEventListener("click", advanceClue);
+        nb.addEventListener("click", function(){ advanceClue(); }); // no args: a click event must never become the lead message
         return nb;
       }
 
