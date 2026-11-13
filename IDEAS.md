@@ -56,6 +56,16 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
+### Out Loud ideas (not for the classroom site)
+
+Out Loud gets only new, non-school entries. Muse builds these in the Thursday and Sunday Out Loud batches. Same image rules as the classroom site: no film stills, posters, logos, characters, or signature props; use generated illustrations of something generic.
+
+| Idea | Banks | Notes | Status |
+| --- | --- | --- | --- |
+| Star Wars | Game Night, Family Gathering, Kids, Car Ride | The whole saga, not one film. Leads: 1977 first film, box office, number of films, Lucasfilm sold to Disney for about $4 billion in 2012. Never draw a lightsaber, droid, or ship design. | Fawn idea |
+| Raiders of the Lost Ark | Game Night, Date Night, Family Gathering | Leads: 1981, the rolling boulder, the budget vs. box office, how many Indiana Jones films followed. No hat-and-whip image. | Fawn idea |
+| The Godfather | Date Night, Office Party / Happy Hour, Bachelor / Bachelorette | Rated R, so adult banks only, never Kids or Family Gathering. Keep it about the film: 1972, 3 Best Picture-nominated parts, running time, Oscars. | Fawn idea |
+
 ### Kindergarten ideas
 
 Kindergarten puzzles need their own format before we build any: small numbers (mostly 0–20), concrete things kids can picture, clues read aloud by the teacher, and "math" that's counting and comparing (K.CC). To be designed before the first one.
