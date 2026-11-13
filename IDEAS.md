@@ -32,6 +32,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Mother Teresa | 6 | History | People | Keep it about her humanitarian work: Nobel Peace Prize 1979, the people her missions served |
 | Soccer | 7 | Sports & Leisure | Thing | 11 players, 90 minutes, the world's most-watched sport |
 | American football | 7 | Sports & Leisure | Thing | 100-yard field, 11 players, 4 quarters |
+| Pickleball | 7 | Sports & Leisure | Thing | Fawn's pick: build in the next batch (Tuesday, Nov 17, 2026). Leads: court 20 × 44 feet (a scale drawing, 7.G.A.1), invented 1965 on Bainbridge Island, Washington, the 7-foot no-volley zone called the kitchen, a plastic ball with 26–40 holes, player counts and growth from SFIA (percent change, 7.RP.A.3). Keep "paddle," "kitchen," and "dink" out of the early clues. |
 | Six Flags | 7 | Entertainment | Place | Roller coaster heights and speeds (great for rates), number of parks. No brand images. |
 | Yellowstone National Park | 7 | Science & Nature | Place | 1872 (first national park), geysers, Old Faithful's timing |
 | Canada | 7 | Geography | Place | Longest coastline on Earth, lakes, 10 provinces |
