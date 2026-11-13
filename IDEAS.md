@@ -33,7 +33,6 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Soccer | 7 | Sports & Leisure | Thing | 11 players, 90 minutes, the world's most-watched sport |
 | American football | 7 | Sports & Leisure | Thing | 100-yard field, 11 players, 4 quarters |
 | Pickleball | 7 | Sports & Leisure | Thing | Fawn's pick: build in the next batch (Tuesday, Nov 17, 2026). Leads: court 20 × 44 feet (a scale drawing, 7.G.A.1), invented 1965 on Bainbridge Island, Washington, the 7-foot no-volley zone called the kitchen, a plastic ball with 26–40 holes, player counts and growth from SFIA (percent change, 7.RP.A.3). Keep "paddle," "kitchen," and "dink" out of the early clues. |
-| The Adventures of Tintin | 7 | Arts & Literature | Thing | Fawn's favorite: build in the next batch (Tuesday, Nov 17, 2026). Leads: Hergé's comic series, first published 1929; 24 albums (the last one unfinished); translated into dozens of languages, hundreds of millions of copies sold; Tintin and Snowy walked on the Moon in 1954, 15 years before Apollo 11 (a ready-made time or rate question). Leave out Tintin in the Congo entirely. Image: never draw Tintin, Snowy, or the red-and-white checkered rocket; use a generated illustration of something generic (a stack of comic albums, a globe, a reporter's notebook). Keep "Snowy" and "Hergé" out of the early clues. |
 | Six Flags | 7 | Entertainment | Place | Roller coaster heights and speeds (great for rates), number of parks. No brand images. |
 | Yellowstone National Park | 7 | Science & Nature | Place | 1872 (first national park), geysers, Old Faithful's timing |
 | Canada | 7 | Geography | Place | Longest coastline on Earth, lakes, 10 provinces |
@@ -62,6 +61,7 @@ Out Loud gets only new, non-school entries. Muse builds these in the Thursday an
 
 | Idea | Banks | Notes | Status |
 | --- | --- | --- | --- |
+| The Adventures of Tintin | Family Gathering, Kids, Game Night, Car Ride | Fawn's favorite: build in the next Out Loud batch. Leads: Hergé's comic series, first published 1929; 24 albums (the last one unfinished); translated into dozens of languages, hundreds of millions of copies sold; Tintin and Snowy walked on the Moon in 1954, 15 years before Apollo 11. Leave out Tintin in the Congo entirely. Never draw Tintin, Snowy, or the red-and-white checkered rocket. Keep "Snowy" and "Hergé" out of the early clues. | Fawn idea |
 | Star Wars | Game Night, Family Gathering, Kids, Car Ride | The whole saga, not one film. Leads: 1977 first film, box office, number of films, Lucasfilm sold to Disney for about $4 billion in 2012. Never draw a lightsaber, droid, or ship design. | Fawn idea |
 | Raiders of the Lost Ark | Game Night, Date Night, Family Gathering | Leads: 1981, the rolling boulder, the budget vs. box office, how many Indiana Jones films followed. No hat-and-whip image. | Fawn idea |
 | The Godfather | Date Night, Office Party / Happy Hour, Bachelor / Bachelorette | Rated R, so adult banks only, never Kids or Family Gathering. Keep it about the film: 1972, 3 Best Picture-nominated parts, running time, Oscars. | Fawn idea |
