@@ -4,7 +4,7 @@ This file is the single source of truth for building Name That Thing puzzles. Mu
 
 ## Each batch
 
-- Write **10 new entries** for Name That Thing (this repo, `index.html`).
+- Write **10 new entries** for Name That Thing (this repo, `index.html`). Batches run **Monday, Wednesday, and Friday**. The batch size stays at 10, never more: quality comes first.
 - Before writing, count the entries in ASSIGN by grade and by category. Pick the grades and shelves with the fewest entries, and say which ones you picked in the batch report.
 - Only grades 6, 7, and 8 for now. Target: 10 entries per shelf, 60 per grade.
 - Future levels (not yet): high school is one level, "High School," never split into grades 9–12, with the same target of 60 puzzles (10 per shelf). Its math draws on the Common Core high school categories (exponential growth, percent change over time, statistics, modeling) rather than grade-level standards.
@@ -94,10 +94,12 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 
 ## Delivery
 
+0. Before pushing, fill in the Clue-arc check and Grade check for every entry. If a clue gives the answer away early or a question sits below its grade, fix it before it goes live, not after the audit.
+
 1. Push the 10 entries **straight to main, so they're live right away.** Fawn reviews everything on the live site; nothing waits for approval.
 2. Check the file passes its syntax check, and confirm the new entries render on the live site.
 3. Send Fawn the batch report below, filled in.
-4. Claude audits the live entries the next morning (Wednesday and Saturday) and sends a fix list. Apply those fixes straight to main too.
+4. Claude audits the live entries the next morning (Tuesday, Thursday, and Saturday) and sends a fix list. Apply those fixes straight to main too.
 
 ## Batch report template
 
@@ -117,6 +119,8 @@ For each entry:
   Math Q2 inputs: numbers | source URLs
   Story numbers not in clues: number | source URL
   Image: source | license
+  Clue-arc check: what a class would guess after each clue, one short line per clue (e.g. "C1: soccer? basketball?  C2: …"). Confirm that clues 1–4 never use a word that names or gives away the answer (for example "touchdown," "cube," "bowler").
+  Grade check: the Common Core standard each math question hits (e.g. 8.EE.A.4).
 
 Anything I couldn't source and cut: ___
 ```
