@@ -1687,7 +1687,8 @@ function setStage(n){
   $("playerShell").scrollIntoView({behavior:"smooth", block:"nearest"});
 }
 function loadEntry(idx, keepScroll){
-  state.entry = idx; state.stage = 0; state.start = true;
+  state.entry = idx; state.stage = 0; state.start = true; state.chosen = true;
+  markPlayed(idx);
   showPlayView();
   renderPlayer();
   syncHashToEntry();
@@ -1775,8 +1776,8 @@ function chooseGrade(g){
 function setGrade(g){
   state.grade = g; filters.category = "All";
   renderGradeSelector(); renderCatShelves(); renderPickPanel(); renderLibrary();
-  var firstIdx = ENTRIES.findIndex(function(e){ return e.grade===g; });
-  if (firstIdx !== -1 && ENTRIES[state.entry].grade !== g) loadEntry(firstIdx, true);
+  var firstIdx = (state.chosen && ENTRIES[state.entry] && ENTRIES[state.entry].grade === g) ? -1 : nextFromDeck(g);
+  if (firstIdx !== -1) loadEntry(firstIdx, true);
   else renderPlayer();
 }
 function renderCatShelves(){
@@ -1869,6 +1870,42 @@ function renderLibrary(){
   }
 }
 
+/* ---------- Play order: random, rotate through shelves, no repeats until the grade runs out ---------- */
+var PLAYED_KEY = "ntt-played-v1";
+var playedByGrade = {};
+var roundCats = {};
+try { playedByGrade = JSON.parse(localStorage.getItem(PLAYED_KEY) || "{}") || {}; } catch(err){ playedByGrade = {}; }
+function savePlayed(){ try { localStorage.setItem(PLAYED_KEY, JSON.stringify(playedByGrade)); } catch(err){} }
+function markPlayed(idx){
+  var e = ENTRIES[idx]; if (!e) return;
+  var g = String(e.grade);
+  var list = playedByGrade[g] || (playedByGrade[g] = []);
+  if (list.indexOf(e.id) === -1){ list.push(e.id); savePlayed(); }
+}
+function nextFromDeck(grade){
+  var g = String(grade);
+  var all = []; ENTRIES.forEach(function(e, idx){ if (e.grade === grade) all.push(idx); });
+  if (!all.length) return -1;
+  var played = playedByGrade[g] || [];
+  var left = all.filter(function(idx){ return played.indexOf(ENTRIES[idx].id) === -1 && idx !== state.entry; });
+  if (!left.length){
+    playedByGrade[g] = (ENTRIES[state.entry] && ENTRIES[state.entry].grade === grade) ? [ENTRIES[state.entry].id] : [];
+    savePlayed(); roundCats[g] = [];
+    left = all.filter(function(idx){ return idx !== state.entry; });
+    if (!left.length) left = all;
+  }
+  var used = roundCats[g] || (roundCats[g] = []);
+  var lastCat = ENTRIES[state.entry] ? ENTRIES[state.entry].category : null;
+  var cats = []; left.forEach(function(idx){ var c = ENTRIES[idx].category; if (cats.indexOf(c) === -1) cats.push(c); });
+  var fresh = cats.filter(function(c){ return used.indexOf(c) === -1 && c !== lastCat; });
+  if (!fresh.length){ used.length = 0; fresh = cats.filter(function(c){ return c !== lastCat; }); }
+  if (!fresh.length) fresh = cats;
+  var cat = fresh[Math.floor(Math.random() * fresh.length)];
+  used.push(cat);
+  var inCat = left.filter(function(idx){ return ENTRIES[idx].category === cat; });
+  return inCat[Math.floor(Math.random() * inCat.length)];
+}
+
 function pickRandomEntry(){
   var pool = [];
   ENTRIES.forEach(function(e, idx){ if (matches(e)) pool.push(idx); });
@@ -1885,6 +1922,8 @@ function pickRandomEntry(){
     return;
   }
   var candidates = pool.length > 1 ? pool.filter(function(idx){ return idx !== state.entry; }) : pool;
+  var unplayed = candidates.filter(function(idx){ var e = ENTRIES[idx]; return (playedByGrade[String(e.grade)] || []).indexOf(e.id) === -1; });
+  if (unplayed.length) candidates = unplayed;
   var pick = candidates[Math.floor(Math.random() * candidates.length)];
   loadEntry(pick);
 }
@@ -1894,10 +1933,8 @@ $("nextBtn").addEventListener("click", function(){
   if (state.start){ beginEntry(); return; }
   if (state.stage < 5) setStage(state.stage + 1);
   else {
-    var bankIdx = ENTRIES.map(function(e, i){ return e.grade===state.grade ? i : -1; }).filter(function(i){ return i!==-1; });
-    var pos = bankIdx.indexOf(state.entry);
-    var nxt = bankIdx[(pos + 1) % bankIdx.length];
-    loadEntry(nxt);
+    var nxt = nextFromDeck(state.grade);
+    if (nxt !== -1) loadEntry(nxt);
   }
 });
 $("prevBtn").addEventListener("click", function(){

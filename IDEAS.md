@@ -42,6 +42,9 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Disneyland or Walt Disney World | 6 | Entertainment | Place | Visitors a year, opening year, park acreage. No logos, castle images, or characters. |
 | The White House | 6 | History | Place | 132 rooms, 35 bathrooms, 1800 first resident. The building only, never current politics. |
 | Basketball | 6 | Sports & Leisure | Thing | 10-foot hoop, 5 players a side, 94-foot court |
+| Pho | 8 | Geography | Thing | Fawn's idea (Nov 17, 2026). Leads: Vietnam's best-known dish, born in northern Vietnam in the early 1900s; beef bones simmered for hours (a rate or ratio question); bowls served per day at a busy shop; spread worldwide after 1975. Don't repeat any numbers from the Vietnam entry. Keep "noodle," "broth," "bowl," and "Vietnam" out of the early clues. |
+| Trivial Pursuit | 7 | Entertainment | Thing | Fawn's idea (Nov 17, 2026). Leads: invented in Montreal in 1979 by friends playing Scrabble with missing pieces; 6 categories and 6 wedges (the site's six shelves come from it); question cards in the original box; 100M+ copies sold. Keep "wedge," "pie," and "board game" out of the early clues. |
+| Hopscotch | 6 | Sports & Leisure | Thing | Fawn's idea (Nov 17, 2026). Leads: squares numbered 1 to 10 on a typical court, the oldest versions and where they started (verify), record-size courts, how far a hop is. Keep "chalk," "squares," and "hop" out of the early clues. |
 
 ## Brainstorm
 
@@ -53,6 +56,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia | Fawn idea |
 | More US states | Geography | Place | 6–8 | Texas, California, Hawaii, Florida, New York | Fawn idea |
 | Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
+| Famous dishes from around the world | Geography | Thing | 8–HS | Start with Pho (now in Ready to build). Balance the world: sushi, pizza Margherita, tacos al pastor, jollof rice, ramen, butter chicken, the croissant. Good fit for High School when it launches. | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
 ### Out Loud ideas (not for the classroom site)
