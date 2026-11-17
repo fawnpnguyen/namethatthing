@@ -53,6 +53,11 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Petra | 7 | History | Place | New Seven Wonders. Leads: carved into rose-red rock, the Treasury about 40 meters tall, rediscovered by Europeans in 1812, visitors per year. |
 | Chichén Itzá | 7 | History | Place | New Seven Wonders. Leads: El Castillo's 4 staircases of 91 steps, plus the top platform, make 365, one for each day of the year; the equinox serpent shadow. Keep the 365 clue last. |
 | Christ the Redeemer | 6 | Geography | Place | New Seven Wonders. Keep it about the engineering: 30 meters tall plus the base, arms about 28 meters across, lightning strikes a year, 1931. |
+| Tug-of-war | 6 | Sports & Leisure | Thing | Fawn's idea (Nov 17, 2026). Leads: an Olympic sport from 1900 to 1920, 8 pullers a team, the rope's center mark and how far it must cross, world championships still held. Keep "rope" and "pull" out of the early clues. |
+| Yo-yo | 6 | Entertainment | Thing | Fawn's idea (Nov 17, 2026). Leads: Pedro Flores's factory in 1928, a yo-yo flown to space in 1985, the world's largest yo-yo, spins per second in competition. Keep "string" and "spin" out of the early clues. |
+| Slinky | 7 | Entertainment | Thing | Famous toys (Fawn's idea). Leads: a Navy engineer's 1943 accident, about 80 feet of wire, 400 sold in 90 minutes at its 1945 debut, hundreds of millions sold since. Keep "spring" and "stairs" late. |
+| Hula hoop | 7 | Entertainment | Thing | Famous toys (Fawn's idea). Leads: about 25 million sold in 4 months in 1958, the record for most hoops spun at once, circumference vs. diameter math. |
+| Teddy bear | 6 | Entertainment | Thing | Famous toys (Fawn's idea). Leads: named after President Theodore Roosevelt after a 1902 hunting trip, made in the US and Germany the same year, the most expensive teddy ever sold. Keep "Roosevelt" for the last clue. |
 
 ## Brainstorm
 
@@ -65,6 +70,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | More US states | Geography | Place | 6–8 | Texas, California, Hawaii, Florida, New York | Fawn idea |
 | Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
 | Famous dishes from around the world | Geography | Thing | 8–HS | Start with Pho (now in Ready to build). Balance the world: sushi, pizza Margherita, tacos al pastor, jollof rice, ramen, butter chicken, the croissant. Good fit for High School when it launches. | Fawn idea |
+| Famous toys | Entertainment | Thing | 6–7 | Slinky, hula hoop, and teddy bear are in Ready to build. More later: Play-Doh (started as wallpaper cleaner), Etch A Sketch, Crayola crayons, the Frisbee. LEGO, the Rubik's Cube, and Barbie are already built. | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
 ### Out Loud ideas (not for the classroom site)
