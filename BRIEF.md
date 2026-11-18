@@ -82,7 +82,7 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 ## Entry fields
 
 - Type: Place, Event, People, or Thing. Theme is never blank and must fit the entry.
-- Math lens uses only the existing labels: Percent, Rates, Scale, Unit conversion.
+- Math lens uses only these labels: Percent, Rates, Scale, Unit conversion, Scientific notation, Geometry. Tag what the two math questions actually do (Geometry covers the Pythagorean theorem, area, volume, and angles; Scientific notation covers writing and operating with it). Up to 2 labels per entry.
 - Every entry gets its own line in ASSIGN with grade and category. Never rely on the default.
 
 ## Images
