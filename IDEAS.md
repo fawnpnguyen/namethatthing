@@ -68,7 +68,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Other countries kids should know | Geography | Place | 6–8 | Balance the world: Brazil, Japan, Egypt, Mexico, Kenya, Korea, the Philippines, Australia | Fawn idea |
 | More US states | Geography | Place | 6–8 | Texas, California, Hawaii, Florida, New York | Fawn idea |
 | Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
-| Famous dishes from around the world | Geography | Thing | 8–HS | Pho is parked under High School ideas. Balance the world: sushi, pizza Margherita, tacos al pastor, jollof rice, ramen, butter chicken, the croissant. Good fit for High School when it launches. | Fawn idea |
+| Famous dishes from around the world | Geography | Thing | HS + Out Loud | Parked for High School (Fawn, Nov 18, 2026); food also fits Out Loud. Pho is under High School ideas. Balance the world: sushi, pizza Margherita, tacos al pastor, jollof rice, ramen, butter chicken, the croissant. Good fit for High School when it launches. | Fawn idea |
 | Famous toys | Entertainment | Thing | 6–7 | Slinky, hula hoop, and teddy bear are in Ready to build. More later: Play-Doh (started as wallpaper cleaner), Etch A Sketch, Crayola crayons, the Frisbee. LEGO, the Rubik's Cube, and Barbie are already built. | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
