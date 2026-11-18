@@ -70,6 +70,7 @@ Grades set by Claude, final say Fawn. Grades 7 and 8 first, since they're thinne
 | Women in math and science | Science & Nature | People | 6–8 | Next in line: Dorothy Vaughan and Mary Jackson (NASA), Hypatia, Emmy Noether, Sophie Germain, Grace Hopper, Chien-Shiung Wu | Fawn idea |
 | Famous dishes from around the world | Geography | Thing | HS + Out Loud | Parked for High School (Fawn, Nov 18, 2026); food also fits Out Loud. Pho is under High School ideas. Balance the world: sushi, pizza Margherita, tacos al pastor, jollof rice, ramen, butter chicken, the croissant. Good fit for High School when it launches. | Fawn idea |
 | Famous toys | Entertainment | Thing | 6–7 | Slinky, hula hoop, and teddy bear are in Ready to build. More later: Play-Doh (started as wallpaper cleaner), Etch A Sketch, Crayola crayons, the Frisbee. LEGO, the Rubik's Cube, and Barbie are already built. | Fawn idea |
+| One record-making Olympics, not "the Olympics" | Sports & Leisure | Event | 8 | Fawn (Nov 18, 2026): the generic Summer Olympics entry was pulled because it happens every 4 years and any edition fits the clues. Pick ONE Games that made history. Leads: Athens 1896, the first modern Games (small numbers to compare with today); Paris 2024, the first Games with equal numbers of men and women. Athletes like Jesse Owens or Simone Biles could be People entries instead. | Fawn idea |
 | Basketball, kindergarten version | Sports & Leisure | Thing | K | 5 players, 2 hoops, 10 feet up. For when K launches. | Fawn idea |
 
 ### Out Loud ideas (not for the classroom site)
