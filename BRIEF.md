@@ -37,7 +37,7 @@ This file is the single source of truth for building Name That Thing puzzles. Mu
 The goal: every clue sparks a conversation and changes the class's guesses. Clues should help, never frustrate: every unit says what's being measured ("feet tall," "years old," "the year it opened," "miles of wire") without naming the thing itself. A bare number or year with no unit is never enough. Test each clue by asking, "What would students say after this clue that they couldn't say before?"
 
 - **Clue 1 has to give students something to reason about.** "6 years" (Diary of a Wimpy Kid) leads nowhere. "21 books" opens a real conversation.
-- **Never two of the same kind of number in a row.** Two lengths back to back (the ISS's 356 feet, then 239 feet) adds nothing. Mix the kinds: size, money, time, people, speed, counts.
+- **Never two of the same kind of number in a row.** Three years in a row (volleyball's 1895, 1947, 1964) or two percents in a row breaks this. Two lengths back to back (the ISS's 356 feet, then 239 feet) adds nothing. Mix the kinds: size, money, time, people, speed, counts.
 - **Money is a great middle clue.** A huge cost tells the class "government-scale" or "blockbuster" without saying which one (the ISS's $150 billion).
 - **Don't give it away early.** "Coral" at clue 2 ends the Great Barrier Reef. A famous year at clue 1 ends the Wright brothers.
 - **No repeats in disguise.** 181 minutes and 3 hours 1 minute are the same clue (Endgame).
@@ -51,7 +51,9 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 - The answer is what a kid would say: "The asteroid that wiped out the dinosaurs," not "Chicxulub"; "Wasted food," not "World Food Waste, 2022." Put formal names and years in the decodes and story.
 - Only year-stamp an answer when the clues are about that specific year's edition (e.g. "The 2026 FIFA World Cup").
 - Place each entry where students can plausibly know or reason their way to it. If it's too obscure for grade 6, put it in grade 7 or 8 (Krakatoa and Lake Baikal are grade 8).
-- Math questions must fit the assigned grade's Common Core standards: grade 6, ratios, rates, unit rates, percents (6.RP); grade 7, proportional relationships, multi-step percent and scale problems (7.RP, 7.G.A.1); grade 8, scientific notation and operations with it (8.EE.A.3–4), linear functions and rates of change (8.F), multi-step proportional reasoning.
+- Math questions must fit the assigned grade's Common Core standards: grade 6, ratios, rates, unit rates, percents (6.RP); grade 7, proportional relationships, multi-step percent and scale problems (7.RP, 7.G.A.1); grade 8, scientific notation and operations with it (8.EE.A.3–4), linear functions and rates of change (8.F), volume of cylinders, cones, and spheres (8.G.C.9), the Pythagorean theorem (8.G.B.7), multi-step proportional reasoning.
+- Below grade, and not allowed in that grade: for grade 8, area of a rectangle, volume of a box, circumference, a single unit rate, or a one-step percent; for grade 7, a single unit rate or a one-step conversion (tons to pounds). Each grade 8 question needs at least one grade 8 step.
+- A whole batch should not repeat a question type (two circumference questions, two scale drawings with the same setup). Check the site too: diagonal-of-a-rectangle and "1 centimeter stands for 2 meters" scale drawings are already used.
 
 ## Math questions
 
@@ -68,7 +70,7 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 - Two paragraphs, about 100–150 words.
 - Em dashes with no spaces—like this.
 - US spelling and US dates (April 23, 2005; theaters; diarrhea).
-- Never presume the audience. No "stuns classes," "surprises every class," or "students your age."
+- Never presume the audience. No "stuns classes," "surprises every class," or "students your age." That includes decodes: never end a clue with "the picture everyone knows," "the view everyone pictures," or any line telling readers what they already imagine. End on a fact instead.
 - Short, plain sentences. Check every comparison (a doorway, a school bell, a city) makes literal sense.
 
 ## Choosing People entries
