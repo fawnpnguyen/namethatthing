@@ -40,6 +40,11 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 - **Never two of the same kind of number in a row.** Three years in a row (volleyball's 1895, 1947, 1964) or two percents in a row breaks this. Two lengths back to back (the ISS's 356 feet, then 239 feet) adds nothing. Mix the kinds: size, money, time, people, speed, counts.
 - **Money is a great middle clue.** A huge cost tells the class "government-scale" or "blockbuster" without saying which one (the ISS's $150 billion).
 - **Don't give it away early.** "Coral" at clue 2 ends the Great Barrier Reef. A famous year at clue 1 ends the Wright brothers.
+- **Order clues from most possible answers to fewest. This is Fawn's #1 rule, and it keeps getting missed.** Before you push, rank the five clues by how many answers each one still allows, and put them in that order. Clue 1 should leave the most contenders.
+  - Identity years go late, never first: the year a state joined, a building's first resident, a country's founding. These are the easiest to pin down (Alaska's 1959 at clue 1; the White House's 1800 at clue 2).
+  - Category words go late: "provinces" says Canada, "falls" says Niagara, "serpent shadow" says Chichén Itzá. A word that names the kind of thing (country, falls, painting, sport) belongs in clue 5 only.
+  - Good openers: people and cultures (11 Native groups), size or area, money, and counts that many answers could share.
+  - The signature fact the whole class would know (the serpent shadow, the open arms, 10 provinces) is clue 5.
 - **No repeats in disguise.** 181 minutes and 3 hours 1 minute are the same clue (Endgame).
 - **The last clue should make it gettable,** not merely confirm what clue 3 already gave away.
 - **No bare percents.** "20%" with no context gives students nothing to argue about; put the share in the math instead, or give it a unit with context ("of the lower 48 states drains into it").
