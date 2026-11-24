@@ -2,6 +2,8 @@
 
 This file is the single source of truth for building Name That Thing puzzles. Muse re-reads it from the repo at the start of every batch; Claude maintains it and audits against it. If it conflicts with an older saved copy, this file wins.
 
+**Out Loud (`/out-loud/`) follows every rule in this brief too:** sourcing, clue order, narrowing words, and images. The only differences are its audience (all-ages occasion banks instead of grade levels) and that its puzzles have no math questions.
+
 ## Each batch
 
 - Write **10 new entries** for Name That Thing (this repo, `index.html`). Batches run **Monday, Wednesday, and Friday**. The batch size stays at 10, never more: quality comes first.
@@ -85,6 +87,12 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 - **No one controversial.** Skip anyone whose name would start an argument in a classroom or a complaint from a parent: no current politicians, no divisive public figures, no one known mainly for a scandal.
 - **Cartoon and story characters are welcome,** but only ones appropriate for middle schoolers. Never draw or show the character. The reveal image must be something generic (a pencil sketch of a setting, an object linked to them) or a properly licensed photo.
 - **Real people's photos** must be public domain or Creative Commons with the credit line. If there's no free photo, use a generated illustration of something connected to them, not a likeness of the person.
+
+## Reveal images
+
+- **If the answer is a specific real artwork, building, landmark, or natural wonder** (The Starry Night, Chichén Itzá, Denali), the reveal shows a real public-domain or Creative Commons photo of it, with a credit line. Never a generated look-alike. A reader called out the generated Starry Night on launch day.
+- **Generated illustrations are only for** trademarked products whose real images are copyrighted (Pac-Man, Minecraft, Monopoly) and for generic subjects with no single real face (basketball, the yo-yo, a whole country).
+- Before pushing, check every reveal image against this rule.
 
 ## Entry fields
 
