@@ -85,14 +85,17 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 - **Balance across the whole site:** people of all races, ethnicities, genders, and parts of the world. Before picking, look at who's already on the site and fill the gaps.
 - **Choose people who inspired, created, or invented:** scientists, inventors, artists, writers, explorers, athletes, activists, mathematicians.
 - **No one controversial.** Skip anyone whose name would start an argument in a classroom or a complaint from a parent: no current politicians, no divisive public figures, no one known mainly for a scandal.
-- **Cartoon and story characters are welcome,** but only ones appropriate for middle schoolers. Never draw or show the character. The reveal image must be something generic (a pencil sketch of a setting, an object linked to them) or a properly licensed photo.
-- **Real people's photos** must be public domain or Creative Commons with the credit line. If there's no free photo, use a generated illustration of something connected to them, not a likeness of the person.
+- **Cartoon and story characters are welcome,** but only ones appropriate for middle schoolers. Never draw or show the character. The reveal is a real, credited free photo of something tied to them (see Reveal images).
+- **Real people's photos** must be public domain or Creative Commons with the credit line. If there's no free photo of the person, use a free photo of something connected to them; if none fits, flag the entry.
 
 ## Reveal images
 
 - **If the answer is a specific real artwork, building, landmark, or natural wonder** (The Starry Night, Chichén Itzá, Denali), the reveal shows a real public-domain or Creative Commons photo of it, with a credit line. Never a generated look-alike. A reader called out the generated Starry Night on launch day.
-- **Generated illustrations are only for** trademarked products whose real images are copyrighted (Pac-Man, Minecraft, Monopoly) and for generic subjects with no single real face (basketball, the yo-yo, a whole country).
-- Before pushing, check every reveal image against this rule.
+- **No generated images anywhere, in any batch** (Nov 26, 2026). Every reveal is a real, credited free photo from Wikimedia Commons, Unsplash, or Pexels.
+- **Copyrighted films and games:** no screenshots or stills. Use a free photo of a real-world object tied to it: a theater marquee, theme-park sign, book display, arcade cabinet, or official merch or display.
+- **No identifiable kids** in reveal photos.
+- **If no free photo fits,** flag the entry and leave it out. Never generate one.
+- Before pushing, check every reveal image against these rules.
 
 ## Entry fields
 
@@ -102,9 +105,9 @@ The goal: every clue sparks a conversation and changes the class's guesses. Clue
 
 ## Images
 
-- Use only images you can trace: public domain (NASA, Library of Congress, pre-1929 works), a Creative Commons license, or one you generated yourself.
-- No film stills, posters, book covers, box art, game screenshots, logos, characters, or news photos unless you can show the license. Generated images must not copy a signature design (a famous scene, a mascot, a trophy).
-- Every image gets a credit line: source, creator if known, license, or "Illustration generated for Name That Thing."
+- Use only images you can trace: public domain (NASA, Library of Congress, pre-1929 works), or a Creative Commons license. Never a generated image.
+- No film stills, posters, book covers, box art, game screenshots, logos, characters, or news photos unless you can show the license.
+- Every image gets a credit line: source, creator if known, and license.
 - Alt text must match what the story says.
 
 ## Delivery
